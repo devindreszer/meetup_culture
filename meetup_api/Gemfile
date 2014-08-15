@@ -41,3 +41,10 @@ group :test do
   gem 'poltergeist'
   gem 'shoulda-matchers'
 end
+
+# Serializer
+gem 'active_model_serializers'
+
+# Cross-Origin Resource Sharing
+# allows HTTP Request from pages NOT served from this Rails App
+gem 'rack-cors', :require => 'rack/cors'
