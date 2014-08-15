@@ -11,15 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815200719) do
+ActiveRecord::Schema.define(version: 20140815203133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: true do |t|
-    t.text "meetup_id", null: false
-    t.text "name",      null: false
-    t.text "shortname", null: false
+    t.integer  "meetup_id",  null: false
+    t.text     "name",       null: false
+    t.text     "shortname",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cities", force: true do |t|
+    t.integer  "meetup_id",    null: false
+    t.integer  "ranking"
+    t.integer  "member_count"
+    t.text     "city",         null: false
+    t.text     "state",        null: false
+    t.text     "country",      null: false
+    t.text     "zip"
+    t.decimal  "lon"
+    t.decimal  "lat"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

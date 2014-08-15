@@ -1,7 +1,10 @@
 class CreateCategories < ActiveRecord::Migration
   def change
     create_table :categories do |t|
-      t.text :meetup_id, :name, :shortname, null: false
+      t.integer :meetup_id, null: false
+      t.text :name, :shortname, null: false
+
+      t.timestamps
     end
   end
 end
