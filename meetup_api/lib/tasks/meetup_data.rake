@@ -33,7 +33,6 @@ namespace :meetup do
   desc "Download group count data"
   task group_counts: :environment do
     meetup_data = MeetupData.new
-    meetup_category_ids = Category.all
     Category.all.each do |category|
       response = meetup_data.group_count(category.meetup_id)
       GroupCount.create!(
