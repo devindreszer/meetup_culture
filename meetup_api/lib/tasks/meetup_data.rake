@@ -2,7 +2,7 @@ namespace :meetup do
 
   desc "Download group categories"
   task categories: :environment do
-    response = MeetupData.get_categories
+    response = MeetupData.categories
     response["results"].each do |category|
       Category.create!(
         meetup_id: category["id"].to_i,
@@ -14,7 +14,7 @@ namespace :meetup do
 
   desc "Download top 200 cities"
   task cities: :environment do
-    response = MeetupData.get_cities
+    response = MeetupData.cities
     response["results"].each do |city|
       City.create!(
         meetup_id: city["id"].to_i,
@@ -26,6 +26,20 @@ namespace :meetup do
         lat: city["lat"].to_f,
         ranking: city["ranking"].to_i,
         member_count: city["member_count"].to_i
+      )
+    end
+  end
+
+  desc "Download group count data"
+  task group_counts: :environment do
+    meetup_data = MeetupData.new
+    meetup_category_ids = Category.all
+    Category.all.each do |category|
+      response = meetup_data.group_count(category.meetup_id)
+      GroupCount.create!(
+        city_id: meetup_data.city_id,
+        category_id: category.id,
+        group_count: response["meta"]["total_count"]
       )
     end
   end
