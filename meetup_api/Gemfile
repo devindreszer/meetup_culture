@@ -48,3 +48,9 @@ gem 'active_model_serializers'
 # Cross-Origin Resource Sharing
 # allows HTTP Request from pages NOT served from this Rails App
 gem 'rack-cors', :require => 'rack/cors'
+
+# HTTParty
+gem 'httparty', '~> 0.13.1'
+
+# Hide secret key
+gem 'dotenv-rails', groups: [:development, :test]
