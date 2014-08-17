@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815203133) do
+ActiveRecord::Schema.define(version: 20140817180415) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,5 +37,16 @@ ActiveRecord::Schema.define(version: 20140815203133) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "group_counts", force: true do |t|
+    t.integer  "city_id"
+    t.integer  "category_id"
+    t.integer  "group_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "group_counts", ["category_id"], name: "index_group_counts_on_category_id", using: :btree
+  add_index "group_counts", ["city_id"], name: "index_group_counts_on_city_id", using: :btree
 
 end
