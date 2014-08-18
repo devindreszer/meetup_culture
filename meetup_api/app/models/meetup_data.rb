@@ -1,9 +1,9 @@
 class MeetupData
-  BASE_URL= "http://api.meetup.com/"
+  BASE_URL= "http://api.meetup.com"
   API_KEY = "key=#{ENV['MEETUP_KEY']}"
 
   def categories
-    HTTParty.get("#{BASE_URL}2/categories.json/?#{API_KEY}")
+    HTTParty.get("#{BASE_URL}/2/categories.json/?#{API_KEY}")
   end
 
   def cities
@@ -11,7 +11,17 @@ class MeetupData
   end
 
   def group_count(city, category)
-    city_name = city.city.gsub(' ', '+')
-    HTTParty.get("#{BASE_URL}/2/groups.json/?radius=1&city=#{city_name}&state=#{city.state}&country=#{city.country}&category_id=#{category.meetup_id}&#{API_KEY}")
+    location = "#{city.city.gsub(' ', '+')}+#{city.state}"
+    count = 0
+    offset = 0
+    length = 200
+
+    while length == 200
+      response = HTTParty.get("#{BASE_URL}/find/groups?location=#{location}&country=#{city.country}&category=#{category.meetup_id}&page=200&offset=#{offset}&#{API_KEY}")
+      length = response.length
+      count += length
+      offset += 1
+    end
+    count
   end
 end
