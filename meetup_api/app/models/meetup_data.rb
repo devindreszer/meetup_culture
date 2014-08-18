@@ -12,6 +12,6 @@ class MeetupData
 
   def group_count(city, category)
     city_name = city.city.gsub(' ', '+')
-    HTTParty.get("#{BASE_URL}/2/groups.json/?radius=1&city=#{city_name}&state=#{city.state}&country=#{city.country}&category_id=#{category.id}&#{API_KEY}")
+    HTTParty.get("#{BASE_URL}/2/groups.json/?radius=1&city=#{city_name}&state=#{city.state}&country=#{city.country}&category_id=#{category.meetup_id}&#{API_KEY}")
   end
 end
