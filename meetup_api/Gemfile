@@ -54,3 +54,7 @@ gem 'httparty', '~> 0.13.1'
 
 # Hide secret key
 gem 'dotenv-rails', groups: [:development, :test]
+
+# Whenever for writing and deploying cron jobs
+gem 'whenever', :require => false
+
