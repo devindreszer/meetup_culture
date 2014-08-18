@@ -40,11 +40,10 @@ namespace :meetup do
     end
     city = City.find(city_id)
     Category.all.each do |category|
-      response = MeetupData.new.group_count(city, category)
       GroupCount.create!(
         city_id: city.id,
         category_id: category.id,
-        group_count: response["meta"]["total_count"]
+        group_count: MeetupData.new.group_count(city, category)
       )
     end
   end
