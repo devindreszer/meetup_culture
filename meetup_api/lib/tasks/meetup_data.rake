@@ -4,11 +4,13 @@ namespace :meetup do
   task categories: :environment do
     response = MeetupData.new.categories
     response["results"].each do |category|
-      Category.create!(
-        meetup_id: category["id"].to_i,
-        name: category["name"],
-        shortname: category["shortname"]
-      )
+      File.open('db/seeds.rb', mode="a") do |f|
+        f.write("Category.create!(
+          meetup_id: #{category["id"].to_i},
+          name: '#{category["name"]}',
+          shortname: '#{category["shortname"]}'
+        )\n")
+      end
     end
   end
 
@@ -16,17 +18,19 @@ namespace :meetup do
   task cities: :environment do
     response = MeetupData.new.cities
     response["results"].each do |city|
-      City.create!(
-        meetup_id: city["id"].to_i,
-        city: city["city"],
-        state: city["state"],
-        country: city["country"],
-        zip: city["zip"],
-        lon: city["lon"].to_f,
-        lat: city["lat"].to_f,
-        ranking: city["ranking"].to_i,
-        member_count: city["member_count"].to_i
-      )
+      File.open('db/seeds.rb', mode="a") do |f|
+        f.write("City.create!(
+          meetup_id: #{city["id"].to_i},
+          city: '#{city["city"]}',
+          state: '#{city["state"]}',
+          country: '#{city["country"]}',
+          zip: '#{city["zip"]}',
+          lon: #{city["lon"].to_f},
+          lat: #{city["lat"].to_f},
+          ranking: #{city["ranking"].to_i},
+          member_count: #{city["member_count"].to_i}
+        )\n")
+      end
     end
   end
 
@@ -40,12 +44,13 @@ namespace :meetup do
     end
     city = City.find(city_id)
     Category.all.each do |category|
-      GroupCount.create!(
-        city_id: city.id,
-        category_id: category.id,
-        group_count: MeetupData.new.group_count(city, category)
-      )
+      File.open('db/seeds.rb', mode="a") do |f|
+        f.write("GroupCount.create!(
+          city_id: #{city.id},
+          category_id: #{category.id},
+          group_count: #{MeetupData.new.group_count(city, category)}
+        )\n")
+      end
     end
   end
-
 end
