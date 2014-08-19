@@ -45,11 +45,7 @@ namespace :meetup do
     city = City.find(city_id)
     Category.all.each do |category|
       File.open('db/seeds.rb', mode="a") do |f|
-        f.write("GroupCount.create!(
-          city_id: #{city.id},
-          category_id: #{category.id},
-          group_count: #{MeetupData.new.group_count(city, category)}
-        )\n")
+        f.write("GroupCount.create!(city_id: #{city.id}, category_id: #{category.id}, group_count: #{MeetupData.new.group_count(city, category)})\n")
       end
     end
   end

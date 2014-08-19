@@ -3191,3 +3191,1455 @@ GroupCount.create!(
           category_id: 33,
           group_count: 118
         )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 1,
+          group_count: 21
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 2,
+          group_count: 169
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 3,
+          group_count: 35
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 4,
+          group_count: 27
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 5,
+          group_count: 29
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 6,
+          group_count: 26
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 7,
+          group_count: 17
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 8,
+          group_count: 64
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 9,
+          group_count: 42
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 10,
+          group_count: 38
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 11,
+          group_count: 28
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 12,
+          group_count: 75
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 13,
+          group_count: 23
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 14,
+          group_count: 74
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 15,
+          group_count: 16
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 16,
+          group_count: 10
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 17,
+          group_count: 33
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 18,
+          group_count: 13
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 19,
+          group_count: 30
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 20,
+          group_count: 68
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 21,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 22,
+          group_count: 6
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 23,
+          group_count: 88
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 24,
+          group_count: 19
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 25,
+          group_count: 36
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 26,
+          group_count: 43
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 27,
+          group_count: 13
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 28,
+          group_count: 44
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 29,
+          group_count: 125
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 30,
+          group_count: 43
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 31,
+          group_count: 37
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 32,
+          group_count: 107
+        )
+GroupCount.create!(
+          city_id: 6,
+          category_id: 33,
+          group_count: 36
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 1,
+          group_count: 43
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 2,
+          group_count: 411
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 3,
+          group_count: 39
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 4,
+          group_count: 67
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 5,
+          group_count: 38
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 6,
+          group_count: 51
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 7,
+          group_count: 23
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 8,
+          group_count: 127
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 9,
+          group_count: 58
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 10,
+          group_count: 59
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 11,
+          group_count: 22
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 12,
+          group_count: 144
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 13,
+          group_count: 31
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 14,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 15,
+          group_count: 41
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 16,
+          group_count: 10
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 17,
+          group_count: 59
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 18,
+          group_count: 29
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 19,
+          group_count: 66
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 20,
+          group_count: 124
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 21,
+          group_count: 90
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 22,
+          group_count: 2
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 23,
+          group_count: 133
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 24,
+          group_count: 36
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 25,
+          group_count: 50
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 26,
+          group_count: 83
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 27,
+          group_count: 20
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 28,
+          group_count: 56
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 29,
+          group_count: 231
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 30,
+          group_count: 90
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 31,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 32,
+          group_count: 248
+        )
+GroupCount.create!(
+          city_id: 7,
+          category_id: 33,
+          group_count: 91
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 1,
+          group_count: 100
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 2,
+          group_count: 744
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 3,
+          group_count: 33
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 4,
+          group_count: 157
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 5,
+          group_count: 68
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 6,
+          group_count: 133
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 7,
+          group_count: 38
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 8,
+          group_count: 160
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 9,
+          group_count: 151
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 10,
+          group_count: 102
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 11,
+          group_count: 55
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 12,
+          group_count: 357
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 13,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 14,
+          group_count: 187
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 15,
+          group_count: 138
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 16,
+          group_count: 17
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 17,
+          group_count: 142
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 18,
+          group_count: 78
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 19,
+          group_count: 143
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 20,
+          group_count: 277
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 21,
+          group_count: 257
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 22,
+          group_count: 3
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 23,
+          group_count: 188
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 24,
+          group_count: 83
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 25,
+          group_count: 79
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 26,
+          group_count: 73
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 27,
+          group_count: 17
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 28,
+          group_count: 106
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 29,
+          group_count: 371
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 30,
+          group_count: 165
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 31,
+          group_count: 124
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 32,
+          group_count: 999
+        )
+GroupCount.create!(
+          city_id: 8,
+          category_id: 33,
+          group_count: 88
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 1,
+          group_count: 43
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 2,
+          group_count: 333
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 3,
+          group_count: 30
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 4,
+          group_count: 59
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 5,
+          group_count: 15587
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 6,
+          group_count: 69
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 7,
+          group_count: 10
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 8,
+          group_count: 61
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 9,
+          group_count: 78
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 10,
+          group_count: 95
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 11,
+          group_count: 45
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 12,
+          group_count: 143
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 13,
+          group_count: 46
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 14,
+          group_count: 93
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 15,
+          group_count: 32
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 16,
+          group_count: 6
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 17,
+          group_count: 84
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 18,
+          group_count: 19
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 19,
+          group_count: 62
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 20,
+          group_count: 142
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 21,
+          group_count: 146
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 22,
+          group_count: 6
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 23,
+          group_count: 164
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 24,
+          group_count: 69
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 25,
+          group_count: 40
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 26,
+          group_count: 77
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 27,
+          group_count: 25
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 28,
+          group_count: 42
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 29,
+          group_count: 185
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 30,
+          group_count: 84
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 31,
+          group_count: 73
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 32,
+          group_count: 328
+        )
+GroupCount.create!(
+          city_id: 9,
+          category_id: 33,
+          group_count: 49
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 1,
+          group_count: 27
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 2,
+          group_count: 285
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 3,
+          group_count: 26
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 4,
+          group_count: 69
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 5,
+          group_count: 25
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 6,
+          group_count: 28
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 7,
+          group_count: 5
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 8,
+          group_count: 72
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 9,
+          group_count: 48
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 10,
+          group_count: 64
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 11,
+          group_count: 32
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 12,
+          group_count: 128
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 13,
+          group_count: 29
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 14,
+          group_count: 55
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 15,
+          group_count: 23
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 16,
+          group_count: 14
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 17,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 18,
+          group_count: 17
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 19,
+          group_count: 39
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 20,
+          group_count: 102
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 21,
+          group_count: 67
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 22,
+          group_count: 4
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 23,
+          group_count: 133
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 24,
+          group_count: 46
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 25,
+          group_count: 23
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 26,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 27,
+          group_count: 17
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 28,
+          group_count: 29
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 29,
+          group_count: 164
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 30,
+          group_count: 91
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 31,
+          group_count: 58
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 32,
+          group_count: 255
+        )
+GroupCount.create!(
+          city_id: 10,
+          category_id: 33,
+          group_count: 33
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 1,
+          group_count: 27
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 2,
+          group_count: 281
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 3,
+          group_count: 29
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 4,
+          group_count: 55
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 5,
+          group_count: 36
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 6,
+          group_count: 41
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 7,
+          group_count: 9
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 8,
+          group_count: 81
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 9,
+          group_count: 66
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 10,
+          group_count: 46
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 11,
+          group_count: 31
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 12,
+          group_count: 112
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 13,
+          group_count: 38
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 14,
+          group_count: 78
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 15,
+          group_count: 35
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 16,
+          group_count: 15
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 17,
+          group_count: 74
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 18,
+          group_count: 27
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 19,
+          group_count: 54
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 20,
+          group_count: 104
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 21,
+          group_count: 93
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 22,
+          group_count: 8
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 23,
+          group_count: 114
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 24,
+          group_count: 35
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 25,
+          group_count: 37
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 26,
+          group_count: 45
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 27,
+          group_count: 15
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 28,
+          group_count: 51
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 29,
+          group_count: 187
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 30,
+          group_count: 66
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 31,
+          group_count: 76
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 32,
+          group_count: 169
+        )
+GroupCount.create!(
+          city_id: 11,
+          category_id: 33,
+          group_count: 37
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 1,
+          group_count: 40
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 2,
+          group_count: 450
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 3,
+          group_count: 36
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 4,
+          group_count: 80
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 5,
+          group_count: 21
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 6,
+          group_count: 52
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 7,
+          group_count: 7
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 8,
+          group_count: 90
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 9,
+          group_count: 85
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 10,
+          group_count: 48
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 11,
+          group_count: 48
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 12,
+          group_count: 195
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 13,
+          group_count: 43
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 14,
+          group_count: 61
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 15,
+          group_count: 30
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 16,
+          group_count: 13
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 17,
+          group_count: 58
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 18,
+          group_count: 23
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 19,
+          group_count: 53
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 20,
+          group_count: 182
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 21,
+          group_count: 171
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 22,
+          group_count: 6
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 23,
+          group_count: 156
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 24,
+          group_count: 46
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 25,
+          group_count: 54
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 26,
+          group_count: 76
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 27,
+          group_count: 13
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 28,
+          group_count: 65
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 29,
+          group_count: 203
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 30,
+          group_count: 96
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 31,
+          group_count: 95
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 32,
+          group_count: 222
+        )
+GroupCount.create!(
+          city_id: 12,
+          category_id: 33,
+          group_count: 51
+        )
+GroupCount.create!(city_id: 13, category_id: 1, group_count: 26)
+GroupCount.create!(city_id: 13, category_id: 2, group_count: 423)
+GroupCount.create!(city_id: 13, category_id: 3, group_count: 48)
+GroupCount.create!(city_id: 13, category_id: 4, group_count: 78)
+GroupCount.create!(city_id: 13, category_id: 5, group_count: 44)
+GroupCount.create!(city_id: 13, category_id: 6, group_count: 38)
+GroupCount.create!(city_id: 13, category_id: 7, group_count: 13)
+GroupCount.create!(city_id: 13, category_id: 8, group_count: 78)
+GroupCount.create!(city_id: 13, category_id: 9, group_count: 47)
+GroupCount.create!(city_id: 13, category_id: 10, group_count: 51)
+GroupCount.create!(city_id: 13, category_id: 11, group_count: 42)
+GroupCount.create!(city_id: 13, category_id: 12, group_count: 118)
+GroupCount.create!(city_id: 13, category_id: 13, group_count: 36)
+GroupCount.create!(city_id: 13, category_id: 14, group_count: 73)
+GroupCount.create!(city_id: 13, category_id: 15, group_count: 27)
+GroupCount.create!(city_id: 13, category_id: 16, group_count: 13)
+GroupCount.create!(city_id: 13, category_id: 17, group_count: 50)
+GroupCount.create!(city_id: 13, category_id: 18, group_count: 25)
+GroupCount.create!(city_id: 13, category_id: 19, group_count: 48)
+GroupCount.create!(city_id: 13, category_id: 20, group_count: 125)
+GroupCount.create!(city_id: 13, category_id: 21, group_count: 69)
+GroupCount.create!(city_id: 13, category_id: 22, group_count: 11)
+GroupCount.create!(city_id: 13, category_id: 23, group_count: 157)
+GroupCount.create!(city_id: 13, category_id: 24, group_count: 27)
+GroupCount.create!(city_id: 13, category_id: 25, group_count: 53)
+GroupCount.create!(city_id: 13, category_id: 26, group_count: 81)
+GroupCount.create!(city_id: 13, category_id: 27, group_count: 17)
+GroupCount.create!(city_id: 13, category_id: 28, group_count: 54)
+GroupCount.create!(city_id: 13, category_id: 29, group_count: 145)
+GroupCount.create!(city_id: 13, category_id: 30, group_count: 95)
+GroupCount.create!(city_id: 13, category_id: 31, group_count: 60)
+GroupCount.create!(city_id: 13, category_id: 32, group_count: 190)
+GroupCount.create!(city_id: 13, category_id: 33, group_count: 49)
+GroupCount.create!(city_id: 14, category_id: 1, group_count: 22)
+GroupCount.create!(city_id: 14, category_id: 2, group_count: 167)
+GroupCount.create!(city_id: 14, category_id: 3, group_count: 14)
+GroupCount.create!(city_id: 14, category_id: 4, group_count: 48)
+GroupCount.create!(city_id: 14, category_id: 5, group_count: 19)
+GroupCount.create!(city_id: 14, category_id: 6, group_count: 29)
+GroupCount.create!(city_id: 14, category_id: 7, group_count: 3)
+GroupCount.create!(city_id: 14, category_id: 8, group_count: 51)
+GroupCount.create!(city_id: 14, category_id: 9, group_count: 51)
+GroupCount.create!(city_id: 14, category_id: 10, group_count: 44)
+GroupCount.create!(city_id: 14, category_id: 11, group_count: 19)
+GroupCount.create!(city_id: 14, category_id: 12, group_count: 151)
+GroupCount.create!(city_id: 14, category_id: 13, group_count: 33)
+GroupCount.create!(city_id: 14, category_id: 14, group_count: 45)
+GroupCount.create!(city_id: 14, category_id: 15, group_count: 27)
+GroupCount.create!(city_id: 14, category_id: 16, group_count: 8)
+GroupCount.create!(city_id: 14, category_id: 17, group_count: 58)
+GroupCount.create!(city_id: 14, category_id: 18, group_count: 20)
+GroupCount.create!(city_id: 14, category_id: 19, group_count: 43)
+GroupCount.create!(city_id: 14, category_id: 20, group_count: 135)
+GroupCount.create!(city_id: 14, category_id: 21, group_count: 82)
+GroupCount.create!(city_id: 14, category_id: 22, group_count: 4)
+GroupCount.create!(city_id: 14, category_id: 23, group_count: 83)
+GroupCount.create!(city_id: 14, category_id: 24, group_count: 23)
+GroupCount.create!(city_id: 14, category_id: 25, group_count: 22)
+GroupCount.create!(city_id: 14, category_id: 26, group_count: 44)
+GroupCount.create!(city_id: 14, category_id: 27, group_count: 8)
+GroupCount.create!(city_id: 14, category_id: 28, group_count: 25)
+GroupCount.create!(city_id: 14, category_id: 29, group_count: 96)
+GroupCount.create!(city_id: 14, category_id: 30, group_count: 38)
+GroupCount.create!(city_id: 14, category_id: 31, group_count: 52)
+GroupCount.create!(city_id: 14, category_id: 32, group_count: 142)
+GroupCount.create!(city_id: 14, category_id: 33, group_count: 24)
+GroupCount.create!(city_id: 15, category_id: 1, group_count: 49)
+GroupCount.create!(city_id: 15, category_id: 2, group_count: 322)
+GroupCount.create!(city_id: 15, category_id: 3, group_count: 20)
+GroupCount.create!(city_id: 15, category_id: 4, group_count: 79)
+GroupCount.create!(city_id: 15, category_id: 5, group_count: 33)
+GroupCount.create!(city_id: 15, category_id: 6, group_count: 58)
+GroupCount.create!(city_id: 15, category_id: 7, group_count: 8)
+GroupCount.create!(city_id: 15, category_id: 8, group_count: 98)
+GroupCount.create!(city_id: 15, category_id: 9, group_count: 77)
+GroupCount.create!(city_id: 15, category_id: 10, group_count: 56)
+GroupCount.create!(city_id: 15, category_id: 11, group_count: 29)
+GroupCount.create!(city_id: 15, category_id: 12, group_count: 207)
+GroupCount.create!(city_id: 15, category_id: 13, group_count: 42)
+GroupCount.create!(city_id: 15, category_id: 14, group_count: 105)
+GroupCount.create!(city_id: 15, category_id: 15, group_count: 61)
+GroupCount.create!(city_id: 15, category_id: 16, group_count: 12)
+GroupCount.create!(city_id: 15, category_id: 17, group_count: 82)
+GroupCount.create!(city_id: 15, category_id: 18, group_count: 34)
+GroupCount.create!(city_id: 15, category_id: 19, group_count: 87)
+GroupCount.create!(city_id: 15, category_id: 20, group_count: 122)
+GroupCount.create!(city_id: 15, category_id: 21, group_count: 110)
+GroupCount.create!(city_id: 15, category_id: 22, group_count: 4)
+GroupCount.create!(city_id: 15, category_id: 23, group_count: 169)
+GroupCount.create!(city_id: 15, category_id: 24, group_count: 57)
+GroupCount.create!(city_id: 15, category_id: 25, group_count: 45)
+GroupCount.create!(city_id: 15, category_id: 26, group_count: 70)
+GroupCount.create!(city_id: 15, category_id: 27, group_count: 15)
+GroupCount.create!(city_id: 15, category_id: 28, group_count: 58)
+GroupCount.create!(city_id: 15, category_id: 29, group_count: 244)
+GroupCount.create!(city_id: 15, category_id: 30, group_count: 103)
+GroupCount.create!(city_id: 15, category_id: 31, group_count: 79)
+GroupCount.create!(city_id: 15, category_id: 32, group_count: 398)
+GroupCount.create!(city_id: 15, category_id: 33, group_count: 46)
+GroupCount.create!(city_id: 16, category_id: 1, group_count: 19)
+GroupCount.create!(city_id: 16, category_id: 2, group_count: 138)
+GroupCount.create!(city_id: 16, category_id: 3, group_count: 21)
+GroupCount.create!(city_id: 16, category_id: 4, group_count: 45)
+GroupCount.create!(city_id: 16, category_id: 5, group_count: 26)
+GroupCount.create!(city_id: 16, category_id: 6, group_count: 21)
+GroupCount.create!(city_id: 16, category_id: 7, group_count: 9)
+GroupCount.create!(city_id: 16, category_id: 8, group_count: 86)
+GroupCount.create!(city_id: 16, category_id: 9, group_count: 38)
+GroupCount.create!(city_id: 16, category_id: 10, group_count: 39)
+GroupCount.create!(city_id: 16, category_id: 11, group_count: 35)
+GroupCount.create!(city_id: 16, category_id: 12, group_count: 68)
+GroupCount.create!(city_id: 16, category_id: 13, group_count: 36)
+GroupCount.create!(city_id: 16, category_id: 14, group_count: 38)
+GroupCount.create!(city_id: 16, category_id: 15, group_count: 26)
+GroupCount.create!(city_id: 16, category_id: 16, group_count: 10)
+GroupCount.create!(city_id: 16, category_id: 17, group_count: 42)
+GroupCount.create!(city_id: 16, category_id: 18, group_count: 11)
+GroupCount.create!(city_id: 16, category_id: 19, group_count: 27)
+GroupCount.create!(city_id: 16, category_id: 20, group_count: 55)
+GroupCount.create!(city_id: 16, category_id: 21, group_count: 74)
+GroupCount.create!(city_id: 16, category_id: 22, group_count: 3)
+GroupCount.create!(city_id: 16, category_id: 23, group_count: 91)
+GroupCount.create!(city_id: 16, category_id: 24, group_count: 24)
+GroupCount.create!(city_id: 16, category_id: 25, group_count: 17)
+GroupCount.create!(city_id: 16, category_id: 26, group_count: 50)
+GroupCount.create!(city_id: 16, category_id: 27, group_count: 15)
+GroupCount.create!(city_id: 16, category_id: 28, group_count: 17)
+GroupCount.create!(city_id: 16, category_id: 29, group_count: 105)
+GroupCount.create!(city_id: 16, category_id: 30, group_count: 84)
+GroupCount.create!(city_id: 16, category_id: 31, group_count: 35)
+GroupCount.create!(city_id: 16, category_id: 32, group_count: 127)
+GroupCount.create!(city_id: 16, category_id: 33, group_count: 32)
+GroupCount.create!(city_id: 17, category_id: 1, group_count: 229)
+GroupCount.create!(city_id: 17, category_id: 2, group_count: 1329)
+GroupCount.create!(city_id: 17, category_id: 3, group_count: 52)
+GroupCount.create!(city_id: 17, category_id: 4, group_count: 221)
+GroupCount.create!(city_id: 17, category_id: 5, group_count: 170)
+GroupCount.create!(city_id: 17, category_id: 6, group_count: 216)
+GroupCount.create!(city_id: 17, category_id: 7, group_count: 101)
+GroupCount.create!(city_id: 17, category_id: 8, group_count: 409)
+GroupCount.create!(city_id: 17, category_id: 9, group_count: 319)
+GroupCount.create!(city_id: 17, category_id: 10, group_count: 193)
+GroupCount.create!(city_id: 17, category_id: 11, group_count: 127)
+GroupCount.create!(city_id: 17, category_id: 12, group_count: 582)
+GroupCount.create!(city_id: 17, category_id: 13, group_count: 135)
+GroupCount.create!(city_id: 17, category_id: 14, group_count: 459)
+GroupCount.create!(city_id: 17, category_id: 15, group_count: 173)
+GroupCount.create!(city_id: 17, category_id: 16, group_count: 41)
+GroupCount.create!(city_id: 17, category_id: 17, group_count: 250)
+GroupCount.create!(city_id: 17, category_id: 18, group_count: 165)
+GroupCount.create!(city_id: 17, category_id: 19, group_count: 277)
+GroupCount.create!(city_id: 17, category_id: 20, group_count: 367)
+GroupCount.create!(city_id: 17, category_id: 21, group_count: 315)
+GroupCount.create!(city_id: 17, category_id: 22, group_count: 12)
+GroupCount.create!(city_id: 17, category_id: 23, group_count: 462)
+GroupCount.create!(city_id: 17, category_id: 24, group_count: 131)
+GroupCount.create!(city_id: 17, category_id: 25, group_count: 167)
+GroupCount.create!(city_id: 17, category_id: 26, group_count: 255)
+GroupCount.create!(city_id: 17, category_id: 27, group_count: 52)
+GroupCount.create!(city_id: 17, category_id: 28, group_count: 227)
+GroupCount.create!(city_id: 17, category_id: 29, group_count: 863)
+GroupCount.create!(city_id: 17, category_id: 30, group_count: 423)
+GroupCount.create!(city_id: 17, category_id: 31, group_count: 233)
+GroupCount.create!(city_id: 17, category_id: 32, group_count: 1214)
+GroupCount.create!(city_id: 17, category_id: 33, group_count: 187)
+GroupCount.create!(city_id: 18, category_id: 1, group_count: 11)
+GroupCount.create!(city_id: 18, category_id: 2, group_count: 152)
+GroupCount.create!(city_id: 18, category_id: 3, group_count: 20)
+GroupCount.create!(city_id: 18, category_id: 4, group_count: 29)
+GroupCount.create!(city_id: 18, category_id: 5, group_count: 17)
+GroupCount.create!(city_id: 18, category_id: 6, group_count: 22)
+GroupCount.create!(city_id: 18, category_id: 7, group_count: 8)
+GroupCount.create!(city_id: 18, category_id: 8, group_count: 72)
+GroupCount.create!(city_id: 18, category_id: 9, group_count: 22)
+GroupCount.create!(city_id: 18, category_id: 10, group_count: 31)
+GroupCount.create!(city_id: 18, category_id: 11, group_count: 27)
+GroupCount.create!(city_id: 18, category_id: 12, group_count: 80)
+GroupCount.create!(city_id: 18, category_id: 13, group_count: 16)
+GroupCount.create!(city_id: 18, category_id: 14, group_count: 26)
+GroupCount.create!(city_id: 18, category_id: 15, group_count: 14)
+GroupCount.create!(city_id: 18, category_id: 16, group_count: 8)
+GroupCount.create!(city_id: 18, category_id: 17, group_count: 28)
+GroupCount.create!(city_id: 18, category_id: 18, group_count: 12)
+GroupCount.create!(city_id: 18, category_id: 19, group_count: 17)
+GroupCount.create!(city_id: 18, category_id: 20, group_count: 53)
+GroupCount.create!(city_id: 18, category_id: 21, group_count: 55)
+GroupCount.create!(city_id: 18, category_id: 22, group_count: 3)
+GroupCount.create!(city_id: 18, category_id: 23, group_count: 76)
+GroupCount.create!(city_id: 18, category_id: 24, group_count: 22)
+GroupCount.create!(city_id: 18, category_id: 25, group_count: 19)
+GroupCount.create!(city_id: 18, category_id: 26, group_count: 46)
+GroupCount.create!(city_id: 18, category_id: 27, group_count: 6)
+GroupCount.create!(city_id: 18, category_id: 28, group_count: 24)
+GroupCount.create!(city_id: 18, category_id: 29, group_count: 88)
+GroupCount.create!(city_id: 18, category_id: 30, group_count: 57)
+GroupCount.create!(city_id: 18, category_id: 31, group_count: 36)
+GroupCount.create!(city_id: 18, category_id: 32, group_count: 87)
+GroupCount.create!(city_id: 18, category_id: 33, group_count: 23)
+GroupCount.create!(city_id: 19, category_id: 1, group_count: 24)
+GroupCount.create!(city_id: 19, category_id: 2, group_count: 288)
+GroupCount.create!(city_id: 19, category_id: 3, group_count: 44)
+GroupCount.create!(city_id: 19, category_id: 4, group_count: 64)
+GroupCount.create!(city_id: 19, category_id: 5, group_count: 38)
+GroupCount.create!(city_id: 19, category_id: 6, group_count: 35)
+GroupCount.create!(city_id: 19, category_id: 7, group_count: 8)
+GroupCount.create!(city_id: 19, category_id: 8, group_count: 96)
+GroupCount.create!(city_id: 19, category_id: 9, group_count: 68)
+GroupCount.create!(city_id: 19, category_id: 10, group_count: 63)
+GroupCount.create!(city_id: 19, category_id: 11, group_count: 48)
+GroupCount.create!(city_id: 19, category_id: 12, group_count: 179)
+GroupCount.create!(city_id: 19, category_id: 13, group_count: 39)
+GroupCount.create!(city_id: 19, category_id: 14, group_count: 43)
+GroupCount.create!(city_id: 19, category_id: 15, group_count: 29)
+GroupCount.create!(city_id: 19, category_id: 16, group_count: 13)
+GroupCount.create!(city_id: 19, category_id: 17, group_count: 48)
+GroupCount.create!(city_id: 19, category_id: 18, group_count: 14)
+GroupCount.create!(city_id: 19, category_id: 19, group_count: 31)
+GroupCount.create!(city_id: 19, category_id: 20, group_count: 142)
+GroupCount.create!(city_id: 19, category_id: 21, group_count: 102)
+GroupCount.create!(city_id: 19, category_id: 22, group_count: 9)
+GroupCount.create!(city_id: 19, category_id: 23, group_count: 127)
+GroupCount.create!(city_id: 19, category_id: 24, group_count: 21)
+GroupCount.create!(city_id: 19, category_id: 25, group_count: 37)
+GroupCount.create!(city_id: 19, category_id: 26, group_count: 53)
+GroupCount.create!(city_id: 19, category_id: 27, group_count: 6)
+GroupCount.create!(city_id: 19, category_id: 28, group_count: 40)
+GroupCount.create!(city_id: 19, category_id: 29, group_count: 160)
+GroupCount.create!(city_id: 19, category_id: 30, group_count: 86)
+GroupCount.create!(city_id: 19, category_id: 31, group_count: 55)
+GroupCount.create!(city_id: 19, category_id: 32, group_count: 128)
+GroupCount.create!(city_id: 19, category_id: 33, group_count: 51)
+GroupCount.create!(city_id: 20, category_id: 1, group_count: 11)
+GroupCount.create!(city_id: 20, category_id: 2, group_count: 129)
+GroupCount.create!(city_id: 20, category_id: 3, group_count: 34)
+GroupCount.create!(city_id: 20, category_id: 4, group_count: 25)
+GroupCount.create!(city_id: 20, category_id: 5, group_count: 16)
+GroupCount.create!(city_id: 20, category_id: 6, group_count: 12)
+GroupCount.create!(city_id: 20, category_id: 7, group_count: 4)
+GroupCount.create!(city_id: 20, category_id: 8, group_count: 39)
+GroupCount.create!(city_id: 20, category_id: 9, group_count: 35)
+GroupCount.create!(city_id: 20, category_id: 10, group_count: 30)
+GroupCount.create!(city_id: 20, category_id: 11, group_count: 31)
+GroupCount.create!(city_id: 20, category_id: 12, group_count: 104)
+GroupCount.create!(city_id: 20, category_id: 13, group_count: 25)
+GroupCount.create!(city_id: 20, category_id: 14, group_count: 23)
+GroupCount.create!(city_id: 20, category_id: 15, group_count: 8)
+GroupCount.create!(city_id: 20, category_id: 16, group_count: 10)
+GroupCount.create!(city_id: 20, category_id: 17, group_count: 28)
+GroupCount.create!(city_id: 20, category_id: 18, group_count: 20)
+GroupCount.create!(city_id: 20, category_id: 19, group_count: 22)
+GroupCount.create!(city_id: 20, category_id: 20, group_count: 91)
+GroupCount.create!(city_id: 20, category_id: 21, group_count: 63)
+GroupCount.create!(city_id: 20, category_id: 22, group_count: 4)
+GroupCount.create!(city_id: 20, category_id: 23, group_count: 52)
+GroupCount.create!(city_id: 20, category_id: 24, group_count: 26)
+GroupCount.create!(city_id: 20, category_id: 25, group_count: 16)
+GroupCount.create!(city_id: 20, category_id: 26, group_count: 25)
+GroupCount.create!(city_id: 20, category_id: 27, group_count: 7)
+GroupCount.create!(city_id: 20, category_id: 28, group_count: 12)
+GroupCount.create!(city_id: 20, category_id: 29, group_count: 98)
+GroupCount.create!(city_id: 20, category_id: 30, group_count: 32)
+GroupCount.create!(city_id: 20, category_id: 31, group_count: 33)
+GroupCount.create!(city_id: 20, category_id: 32, group_count: 64)
+GroupCount.create!(city_id: 20, category_id: 33, group_count: 25)
+GroupCount.create!(city_id: 21, category_id: 1, group_count: 17)
+GroupCount.create!(city_id: 21, category_id: 2, group_count: 183)
+GroupCount.create!(city_id: 21, category_id: 3, group_count: 14)
+GroupCount.create!(city_id: 21, category_id: 4, group_count: 42)
+GroupCount.create!(city_id: 21, category_id: 5, group_count: 24)
+GroupCount.create!(city_id: 21, category_id: 6, group_count: 39)
+GroupCount.create!(city_id: 21, category_id: 7, group_count: 5)
+GroupCount.create!(city_id: 21, category_id: 8, group_count: 47)
+GroupCount.create!(city_id: 21, category_id: 9, group_count: 33)
+GroupCount.create!(city_id: 21, category_id: 10, group_count: 32)
+GroupCount.create!(city_id: 21, category_id: 11, group_count: 21)
+GroupCount.create!(city_id: 21, category_id: 12, group_count: 106)
+GroupCount.create!(city_id: 21, category_id: 13, group_count: 26)
+GroupCount.create!(city_id: 21, category_id: 14, group_count: 36)
+GroupCount.create!(city_id: 21, category_id: 15, group_count: 25)
+GroupCount.create!(city_id: 21, category_id: 16, group_count: 5)
+GroupCount.create!(city_id: 21, category_id: 17, group_count: 43)
+GroupCount.create!(city_id: 21, category_id: 18, group_count: 11)
+GroupCount.create!(city_id: 21, category_id: 19, group_count: 33)
+GroupCount.create!(city_id: 21, category_id: 20, group_count: 70)
+GroupCount.create!(city_id: 21, category_id: 21, group_count: 49)
+GroupCount.create!(city_id: 21, category_id: 22, group_count: 2)
+GroupCount.create!(city_id: 21, category_id: 23, group_count: 74)
+GroupCount.create!(city_id: 21, category_id: 24, group_count: 17)
+GroupCount.create!(city_id: 21, category_id: 25, group_count: 10)
+GroupCount.create!(city_id: 21, category_id: 26, group_count: 39)
+GroupCount.create!(city_id: 21, category_id: 27, group_count: 7)
+GroupCount.create!(city_id: 21, category_id: 28, group_count: 18)
+GroupCount.create!(city_id: 21, category_id: 29, group_count: 108)
+GroupCount.create!(city_id: 21, category_id: 30, group_count: 33)
+GroupCount.create!(city_id: 21, category_id: 31, group_count: 40)
+GroupCount.create!(city_id: 21, category_id: 32, group_count: 140)
+GroupCount.create!(city_id: 21, category_id: 33, group_count: 16)
