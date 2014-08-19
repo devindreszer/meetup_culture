@@ -35,7 +35,7 @@ namespace :meetup do
   end
 
   desc "Download group count data for single city"
-  task group_counts: :environment do
+  task group_counts: [:environment, "db:reset"] do
     last_group_count = GroupCount.last
     if last_group_count.present?
       city_id = last_group_count.city_id + 1
