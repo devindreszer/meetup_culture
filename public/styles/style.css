@@ -21,16 +21,16 @@ svg {
 }
 
 .bar rect.percent {
-    fill: #74c476;
+    fill: #F20000;
 }
 
 .bar:hover rect.percent {
-    fill: #a1d99b;
+    fill: #BF0000;
 }
 
 .bar text {
     font-size: 12px;
-    fill: #333;
+    fill: #fff;
 }
 
 .axis line {
