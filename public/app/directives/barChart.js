@@ -77,6 +77,18 @@
           .attr('y', y.rangeBand() - 5)
           .attr('x', spacing);
 
+        // add median ticks
+        var median = d3.median(data.map(function(d){ return d.group_percentages; }));
+
+        d3.select('span.median').text(percent(median));
+
+        bars.append('line')
+          .attr('class', 'median')
+          .attr('x1', x(median))
+          .attr('x2', x(median))
+          .attr('y1', 1)
+          .attr('y2', y.rangeBand() - 1);
+
       }, true);
 
     }
