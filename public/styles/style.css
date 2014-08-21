@@ -1,0 +1,31 @@
+.bar rect {
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.bar rect.background {
+    fill: #eee;
+}
+
+.bar rect.percent {
+    fill: #74c476;
+}
+
+.bar:hover rect.percent {
+    fill: #a1d99b;
+}
+
+.bar text {
+    font-size: 12px;
+    fill: #333;
+}
+
+.axis line {
+    stroke: #ccc;
+    stroke-width: 1;
+}
+
+line.median {
+    stroke: #777;
+    stroke-width: 1;
+}

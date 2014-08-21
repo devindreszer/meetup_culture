@@ -10,6 +10,8 @@
     return factory;
   };
 
+  categoriesFactory.$inject = ['$http'];
+
   angular.module('MeetupCulture').factory('categoriesFactory', categoriesFactory);
 
 })();
