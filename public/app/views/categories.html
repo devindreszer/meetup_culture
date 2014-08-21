@@ -1,7 +1,8 @@
 <h1>Categories</h1>
-<ul>
-  <li x-ng-repeat="category in categories">{{ category.name }}</li>
-</ul>
+<div>
+  <select id="category-selection" x-ng-model="currentCategory" x-ng-options="category.name for category in categories">
+  </select>
+</div>
 <div id="chart">
-  <bar-chart data="categories"></bar-chart>
+  <bar-chart data="currentCategory"></bar-chart>
 </div>

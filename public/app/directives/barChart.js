@@ -5,38 +5,33 @@
     function link(scope, element, attr) {
 
       var margin = {top: 30, right: 10, bottom: 30, left: 10},
-        width = 960,
+        width = 960 - margin.left - margin.right,
         height = 200, // placeholder
         barHeight = 20,
         spacing = 3,
-        percent = d3.format('%');
+        percent = d3.format('.1%'),
+        x = d3.scale.linear().range([0, width]),
+        y = d3.scale.ordinal();
 
-      width = width - margin.left - margin.right;
+      // create the chart
+      var chart = d3.select(element[0]).append('svg')
+        .style('width', (width + margin.left + margin.right) + 'px')
+      .append('g')
+        .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
 
       scope.$watch('data', function(data){
         if(!data){ return; }
 
-        data = data[0].group_counts;
+        data = data.group_counts;
         data = _.sortBy(data, 'group_percentages').reverse();
 
-        // scales and axes
-        var x = d3.scale.linear()
-          .domain([0, d3.max(data, function(d) { return d.group_percentages; })])
-          .range([0, width]);
+        x.domain([0, d3.max(data, function(d) { return d.group_percentages; })]);
 
-        var y = d3.scale.ordinal()
-          .domain(d3.range(data.length))
-            .rangeBands([0, data.length * barHeight]);
+        y.domain(d3.range(data.length)).rangeBands([0, data.length * barHeight]);
 
         var xAxis = d3.svg.axis()
           .scale(x)
           .tickFormat(percent);
-
-        // create the chart
-        var chart = d3.select(element[0]).append('svg')
-          .style('width', (width + margin.left + margin.right) + 'px')
-        .append('g')
-          .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
 
         // set height based on data
         height = y.rangeExtent()[1];
@@ -44,6 +39,8 @@
           .style('height', (height + margin.top + margin.bottom) + 'px');
 
         // render the axes
+        chart.selectAll(".axis").remove();
+
         chart.append('g')
           .attr('class', 'x axis top')
           .call(xAxis.orient('top'));
@@ -54,11 +51,15 @@
           .call(xAxis.orient('bottom'));
 
         // render the bars
-        var bars = chart.selectAll('.bar')
-          .data(data)
-        .enter().append('g')
-          .attr('class', 'bar')
-          .attr('transform', function(d, i) { return 'translate(0,'  + y(i) + ')'; });
+        var bars = chart
+          .selectAll('.bar')
+            .data(data);
+
+        bars.exit().remove();
+
+        bars.enter().append('g')
+            .attr('class', 'bar')
+            .attr('transform', function(d, i) { return 'translate(0,'  + y(i) + ')'; });
 
         bars.append('rect')
           .attr('class', 'background')

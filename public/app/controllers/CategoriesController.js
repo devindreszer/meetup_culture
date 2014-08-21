@@ -6,6 +6,7 @@
       categoriesFactory.getCategories()
         .success(function(categories) {
           $scope.categories = categories;
+          $scope.currentCategory = categories[0];
         })
         .error(function(data) {
           console.log(data);

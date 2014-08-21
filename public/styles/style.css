@@ -1,3 +1,16 @@
+/* svg styles */
+svg {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #444;
+    stroke-width: .5;
+}
+
 .bar rect {
     stroke: #fff;
     shape-rendering: crispEdges;
