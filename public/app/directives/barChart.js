@@ -21,9 +21,18 @@
 
       scope.$watch('data', function(data){
         if(!data){ return; }
+        var type,
+          median;
+
+        if(data.city) {
+          type = "cities";
+        } else {
+          type = "categories";
+        }
 
         data = data.group_counts;
         data = _.sortBy(data, 'group_percentages').reverse();
+
 
         x.domain([0, d3.max(data, function(d) { return d.group_percentages; })]);
 
@@ -71,15 +80,25 @@
           .attr('height', y.rangeBand())
           .attr('width', function(d) { return x(d.group_percentages); });
 
-        bars.append('text')
-          .text(function(d) { return d.city + ", " + d.state; })
-          .attr('class', 'name')
-          .attr('y', y.rangeBand() - 5)
-          .attr('x', spacing);
+        // category based table
+        if(type === "categories") {
+          bars.append('text')
+            .text(function(d) { return d.city + ", " + d.state; })
+            .attr('class', 'name')
+            .attr('y', y.rangeBand() - 5)
+            .attr('x', spacing);
 
-        // add median ticks
-        var median = d3.median(data.map(function(d){ return d.group_percentages; }));
+        // city based table
+        } else {
+          bars.append('text')
+            .text(function(d) { return d.category; })
+            .attr('class', 'name')
+            .attr('y', y.rangeBand() - 5)
+            .attr('x', spacing);
+        }
 
+      // add median ticks
+        median = d3.median(data.map(function(d){ return d.group_percentages; }));
         d3.select('span.median').text(percent(median));
 
         bars.append('line')
