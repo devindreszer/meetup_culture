@@ -3,6 +3,9 @@
   <select id="category-selection" x-ng-model="currentCategory" x-ng-options="category.name for category in categories">
   </select>
 </div>
+<h2>{{ currentCategory.name }}</h2>
+<h3>Total Groups: {{ currentCategory.total_groups | number:0 }}</h3>
+<h3>Median Percentage: {{ currentCategory.median_percentage | percentage:1 }}</h3>
 <div id="chart">
   <bar-chart data="currentCategory"></bar-chart>
 </div>
