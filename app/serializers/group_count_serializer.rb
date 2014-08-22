@@ -14,6 +14,7 @@ class GroupCountSerializer < ActiveModel::Serializer
   end
 
   def group_percentages
-    object.group_count.to_f / object.city.total_groups
+    object.group_percentages
   end
+
 end
