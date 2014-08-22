@@ -8,10 +8,7 @@ class Category < ActiveRecord::Base
   end
 
   def median_percentage
-    group_percentages = []
-    self.group_counts.each do |group_count|
-      group_percentages << (group_count.group_count.to_f / group_count.city.total_groups)
-    end
+    group_percentages = self.group_counts.map(&:group_percentages)
     group_percentages.sort!
     length = group_percentages.length
     ((group_percentages[(length - 1) / 2] + group_percentages[length / 2]) / 2.0).to_f

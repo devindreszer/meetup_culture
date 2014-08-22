@@ -6,4 +6,11 @@ class City < ActiveRecord::Base
   def total_groups
     GroupCount.where(city_id: id).pluck(:group_count).reduce(&:+)
   end
+
+  def median_percentage
+    group_percentages = self.group_counts.map(&:group_percentages)
+    group_percentages.sort!
+    length = group_percentages.length
+    ((group_percentages[(length - 1) / 2] + group_percentages[length / 2]) / 2.0).to_f
+  end
 end
