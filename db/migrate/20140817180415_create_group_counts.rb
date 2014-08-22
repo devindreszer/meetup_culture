@@ -4,6 +4,7 @@ class CreateGroupCounts < ActiveRecord::Migration
       t.references :city, index: true
       t.references :category, index: true
       t.integer :group_count
+      t.decimal :group_percentage
 
       t.timestamps
     end
