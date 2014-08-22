@@ -5,7 +5,7 @@ class CitiesController < ApplicationController
   end
 
   def index
-    @cities = City.all
+    @cities = City.includes(:group_counts).where.not(group_counts: { category_id: nil })
     render json: @cities
   end
 
