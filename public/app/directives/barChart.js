@@ -34,9 +34,9 @@
         }
 
         data = data.group_counts;
-        data = _.sortBy(data, 'group_percentages').reverse();
+        data = _.sortBy(data, 'group_percentage').reverse();
 
-        x.domain([0, d3.max(data, function(d) { return d.group_percentages; })]);
+        x.domain([0, d3.max(data, function(d) { return d.group_percentage; })]);
 
         y.domain(d3.range(data.length))
           .rangeBands([0, data.length * barHeight]);
@@ -81,7 +81,7 @@
         bars.append('rect')
           .attr('class', 'percent')
           .attr('height', y.rangeBand())
-          .attr('width', function(d) { return x(d.group_percentages); });
+          .attr('width', function(d) { return x(d.group_percentage); });
 
         // category based table
         if(type === "categories") {
@@ -101,7 +101,7 @@
         }
 
       // add median ticks
-        median = d3.median(data.map(function(d){ return d.group_percentages; }));
+        median = d3.median(data.map(function(d){ return d.group_percentage; }));
         d3.select('span.median').text(percent(median));
 
         bars.append('line')

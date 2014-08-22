@@ -5,6 +5,7 @@
     function init() {
       categoriesFactory.getCategories()
         .success(function(categories) {
+          categories = _.sortBy(categories, 'name');
           $scope.categories = categories;
           $scope.currentCategory = categories[0];
         })
