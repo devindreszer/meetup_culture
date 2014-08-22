@@ -10,6 +10,12 @@
           controller: 'CategoriesController'
         }
       )
+      .when('/categories',
+        {
+          templateUrl: 'app/views/categories.html',
+          controller: 'CategoriesController'
+        }
+      )
       .when('/cities',
         {
           templateUrl: 'app/views/cities.html',

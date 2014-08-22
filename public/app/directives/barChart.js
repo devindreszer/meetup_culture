@@ -4,7 +4,7 @@
 
     function link(scope, element, attr) {
 
-      var margin = {top: 30, right: 10, bottom: 30, left: 10},
+      var margin = {top: 30, right: 20, bottom: 30, left: 20},
         width = 960 - margin.left - margin.right,
         height = 200, // placeholder
         barHeight = 20,
@@ -22,7 +22,10 @@
       scope.$watch('data', function(data){
         if(!data){ return; }
         var type,
-          median;
+          xAxis,
+          bars,
+          median,
+          colors;
 
         if(data.city) {
           type = "cities";
@@ -33,12 +36,12 @@
         data = data.group_counts;
         data = _.sortBy(data, 'group_percentages').reverse();
 
-
         x.domain([0, d3.max(data, function(d) { return d.group_percentages; })]);
 
-        y.domain(d3.range(data.length)).rangeBands([0, data.length * barHeight]);
+        y.domain(d3.range(data.length))
+          .rangeBands([0, data.length * barHeight]);
 
-        var xAxis = d3.svg.axis()
+        xAxis = d3.svg.axis()
           .scale(x)
           .tickFormat(percent);
 
@@ -60,7 +63,7 @@
           .call(xAxis.orient('bottom'));
 
         // render the bars
-        var bars = chart
+        bars = chart
           .selectAll('.bar')
             .data(data);
 
