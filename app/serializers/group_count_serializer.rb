@@ -1,5 +1,9 @@
 class GroupCountSerializer < ActiveModel::Serializer
-  attributes :city, :state, :group_count, :group_percentages
+  attributes :city, :state, :category, :group_count, :group_percentages
+
+  def category
+    object.category.name
+  end
 
   def city
     object.city.city

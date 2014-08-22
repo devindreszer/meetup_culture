@@ -1,0 +1,10 @@
+<h1>Cities</h1>
+<div>
+  <select id="city-selection" x-ng-model="currentCity" x-ng-options="city.city for city in cities">
+  </select>
+</div>
+<h2>{{ currentCity.city }}</h2>
+<h3>Total Groups: {{ currentCity.total_groups | number:0 }}</h3>
+<div id="chart">
+  <bar-chart data="currentCity"></bar-chart>
+</div>

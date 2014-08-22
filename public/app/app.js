@@ -10,6 +10,12 @@
           controller: 'CategoriesController'
         }
       )
+      .when('/cities',
+        {
+          templateUrl: 'app/views/cities.html',
+          controller: 'CitiesController'
+        }
+      )
       .otherwise({ redirectTo: '/' });
   }]);
 
