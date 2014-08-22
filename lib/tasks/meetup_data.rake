@@ -50,4 +50,56 @@ namespace :meetup do
       end
     end
   end
+
+  desc "Calculate values"
+  task calculate_values: [:environment, "db:reset", :calculate_medians] do
+    GroupCount.all.each do |group_count|
+      group_count.is_over_median = group_count.group_percentage > group_count.category.median_percentage
+      group_count.save!
+    end
+  end
+
+  desc "Calculate medians"
+  task calculate_medians: [:environment, "db:reset", :calculate_group_percentage] do
+    cities = City.includes(:group_counts).where.not(group_counts: { category_id: nil })
+    cities.each do |city|
+      group_percentages = city.group_counts.map(&:group_percentage)
+      group_percentages.sort!
+      length = group_percentages.length
+      city.median_percentage = ((group_percentages[(length - 1) / 2] + group_percentages[length / 2]) / 2.0).to_f
+
+      city.save!
+    end
+
+    Category.all.each do |category|
+      group_percentages = category.group_counts.map(&:group_percentage)
+      group_percentages.sort!
+      length = group_percentages.length
+      category.median_percentage = ((group_percentages[(length - 1) / 2] + group_percentages[length / 2]) / 2.0).to_f
+
+      category.save!
+    end
+  end
+
+  desc "Calculate group percentage"
+  task calculate_group_percentage: [:environment, "db:reset", :calculate_totals] do
+    GroupCount.all.each do |group_count|
+      group_count.group_percentage = group_count.group_count.to_f / group_count.city.total_groups
+      group_count.save!
+    end
+  end
+
+  desc "Calculate total_groups"
+  task calculate_totals: [:environment, "db:reset"] do
+    cities = City.includes(:group_counts).where.not(group_counts: { category_id: nil })
+    cities.each do |city|
+      city.total_groups = city.group_counts.pluck(:group_count).reduce(&:+)
+      city.save!
+    end
+
+    Category.all.each do |category|
+      category.total_groups = category.group_counts.map(&:group_count).reduce(&:+)
+      category.save!
+    end
+  end
 end

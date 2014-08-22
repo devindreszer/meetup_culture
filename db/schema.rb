@@ -11,39 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140817180415) do
+ActiveRecord::Schema.define(version: 20140822221023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: true do |t|
-    t.integer  "meetup_id",  null: false
-    t.text     "name",       null: false
-    t.text     "shortname",  null: false
+    t.integer  "meetup_id",         null: false
+    t.text     "name",              null: false
+    t.text     "shortname",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "total_groups"
+    t.decimal  "median_percentage"
   end
 
   create_table "cities", force: true do |t|
-    t.integer  "meetup_id",    null: false
+    t.integer  "meetup_id",         null: false
     t.integer  "ranking"
     t.integer  "member_count"
-    t.text     "city",         null: false
-    t.text     "state",        null: false
-    t.text     "country",      null: false
+    t.text     "city",              null: false
+    t.text     "state",             null: false
+    t.text     "country",           null: false
     t.text     "zip"
     t.decimal  "lon"
     t.decimal  "lat"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "total_groups"
+    t.decimal  "median_percentage"
   end
 
   create_table "group_counts", force: true do |t|
     t.integer  "city_id"
     t.integer  "category_id"
     t.integer  "group_count"
+    t.decimal  "group_percentage"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_over_median"
   end
 
   add_index "group_counts", ["category_id"], name: "index_group_counts_on_category_id", using: :btree
