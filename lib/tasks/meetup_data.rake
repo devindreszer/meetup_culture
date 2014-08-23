@@ -102,4 +102,36 @@ namespace :meetup do
       category.save!
     end
   end
+
+  desc "Find similar cities"
+  task similar_cities: [:environment, :calculate_values] do
+    cities = City.includes(:group_counts).where.not(group_counts: { category_id: nil })
+    comparison_cities = cities
+
+    results = {}
+    cities.each do |city|
+      city_comparison = {}
+
+      comparison_cities.each do |comparison_city|
+        similarities = 0
+
+        city.group_counts.order(:category_id).each do |group_count|
+          comparison_group_count = comparison_city.group_counts.find_by(category_id: group_count.category_id)
+          similar = (group_count.is_over_median == comparison_group_count.is_over_median) ? 1 : 0
+          similarities += similar
+        end
+
+        percent_similar = similarities.to_f / Category.count
+        city_comparison[comparison_city] = percent_similar
+      end
+
+      similar_cities = (city_comparison.select do |comparison_city, percent_similar|
+        (percent_similar >= (22.0/33) && comparison_city.id != city.id)
+      end).keys
+
+      similar_cities.each do |similar_city|
+        SimilarCityLink.create!(source_city_id: city.id, target_city_id: similar_city.id)
+      end
+    end
+  end
 end
