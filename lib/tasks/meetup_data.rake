@@ -108,7 +108,6 @@ namespace :meetup do
     cities = City.includes(:group_counts).where.not(group_counts: { category_id: nil })
     comparison_cities = cities
 
-    results = {}
     cities.each do |city|
       city_comparison = {}
 
