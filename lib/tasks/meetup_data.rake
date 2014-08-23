@@ -125,7 +125,7 @@ namespace :meetup do
       end
 
       similar_cities = (city_comparison.select do |comparison_city, percent_similar|
-        (percent_similar >= (22.0/33) && comparison_city.id != city.id)
+        percent_similar >= (22.0/33)
       end).keys
 
       similar_cities.each do |similar_city|
