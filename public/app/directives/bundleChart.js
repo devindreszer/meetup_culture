@@ -15,11 +15,11 @@
 
       var bundle = d3.layout.bundle();
 
-      var diagonal = d3.svg.diagonal()
-        .projection(function projection(d) {
-          var r = d.y, a = (d.x - 90) / 180 * Math.PI;
-          return [r * Math.cos(a), r * Math.sin(a)];
-        });
+      var line = d3.svg.line.radial()
+        .interpolate("bundle")
+        .tension(0.85)
+        .radius(function(d) { return d.y; })
+        .angle(function(d) { return d.x / 180 * Math.PI; });
 
       var svg = d3.select(element[0]).append("svg")
         .attr("width", diameter)
@@ -30,14 +30,16 @@
       scope.$watch('data', function(data){
         if(!data){ return; }
 
-        links = data.links;
-        nodes = data.nodes;
+        var links = data.links;
+        var nodes = data.nodes;
+        var test = bundle(links);
+        debugger;
 
         svg.selectAll(".link")
-          .data(links)
+          .data(bundle(links))
         .enter().append("path")
           .attr("class", "link")
-          .attr("d", diagonal);
+          .attr("d", line);
 
         svg.selectAll(".node")
           .data(nodes)

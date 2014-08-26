@@ -15,8 +15,16 @@
           sources = _.uniq(sources);
           sources = _.sortBy(sources);
 
+          var root = {
+            name: "root",
+            parent: { name: "", x: 180, y: 0 },
+            x: 120,
+            y: 0
+          };
+
           for(var i = 0; i < sources.length; i++) {
             similarCityNodes.push({
+              parent: root,
               city: sources[i],
               x: (360 / sources.length) * i,
               y: 360
