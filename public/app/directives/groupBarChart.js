@@ -13,6 +13,9 @@
         x = d3.scale.linear().range([0, width]),
         y = d3.scale.ordinal();
 
+      var color = d3.scale.ordinal()
+        .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
       // create the chart
       var chart = d3.select(element[0]).append('svg')
         .style('width', (width + margin.left + margin.right) + 'px')
@@ -34,6 +37,7 @@
           barData.push(d.group_counts);
         });
         barData = _.flatten(barData);
+        barData = _.sortBy(barData, 'category');
 
         length = barData.length;
 
@@ -64,15 +68,15 @@
           .call(xAxis.orient('bottom'));
 
         // render the bars
-        bars = chart
-          .selectAll('.bar')
-            .data(barData);
+        chart.selectAll('.bar').remove();
 
-        bars.exit().remove();
+        bars = chart.selectAll('.bar')
+          .data(barData);
 
-        bars.enter().append('g')
+        bars.enter()
+          .append('g')
             .attr('class', 'bar')
-            .attr('transform', function(d, i) { return 'translate(0,'  + y(i) + ')'; });
+            .attr('transform', function(d, i) { return 'translate(0,'  + y(i) + ')'; })
 
         bars.append('rect')
           .attr('class', 'background')
@@ -80,26 +84,16 @@
           .attr('width', width);
 
         bars.append('rect')
-          .attr('class', 'percent')
-          .attr('height', y.rangeBand())
-          .attr('width', function(d) { return x(d.group_percentage); });
+            .attr('class', 'percent')
+            .attr('height', y.rangeBand())
+            .attr('width', function(d) { return x(d.group_percentage); })
+            .style("fill", function(d) { return color(d.city); });
 
         bars.append('text')
           .text(function(d){ return d.category; })
           .attr('class', 'name')
           .attr('y', y.rangeBand() - 5)
           .attr('x', spacing);
-
-      // // add median ticks
-      //   median = d3.median(data.map(function(d){ return d.group_percentage; }));
-      //   d3.select('span.median').text(percent(median));
-
-      //   bars.append('line')
-      //     .attr('class', 'median')
-      //     .attr('x1', x(median))
-      //     .attr('x2', x(median))
-      //     .attr('y1', 1)
-      //     .attr('y2', y.rangeBand() - 1);
 
       }, true);
 
