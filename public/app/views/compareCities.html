@@ -18,17 +18,23 @@
   </label>
 </div>
 <div>
+  <ul>
+    <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">{{ category }}</li>
+  </ul>
+</div>
+<div>
+  <h2>Category: {{ currentCategory }}</h2>
+  <pie-chart data="{ category: currentCategory, city: cityComparison[0] }"></pie-chart>
   <h2>{{ cityComparison[0].city }}</h2>
   <h3>Total Groups: {{ cityComparison[0].total_groups | number:0 }}</h3>
 </div>
 <div>
+  <pie-chart data="{ category: currentCategory, city: cityComparison[1] }"></pie-chart>
   <h2>{{ cityComparison[1].city }}</h2>
   <h3>Total Groups: {{ cityComparison[1].total_groups | number:0 }}</h3>
 </div>
 <div>
+  <pie-chart data="{ category: currentCategory, city: cityComparison[2] }"></pie-chart>
   <h2>{{ cityComparison[2].city }}</h2>
   <h3>Total Groups: {{ cityComparison[2].total_groups | number:0 }}</h3>
-</div>
-<div id="chart">
-  <group-bar-chart data="cityComparison"></group-bar-chart>
 </div>
