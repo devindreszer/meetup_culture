@@ -28,6 +28,12 @@
           controller: 'SimilarCityLinksController'
         }
       )
+      .when('/compare-cities',
+        {
+          templateUrl: 'app/views/compareCities.html',
+          controller: 'CompareCitiesController'
+        }
+      )
       .otherwise({ redirectTo: '/' });
   }]);
 
