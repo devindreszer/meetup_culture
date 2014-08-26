@@ -32,14 +32,22 @@
         var group = city.group_counts.filter(function(d){ return d.category === category; })[0]
         var group_percentage = group.group_percentage;
         var pieData = [group_percentage, 1 - group_percentage];
+        var percent_text = (group_percentage * 100).toFixed(1) + '%';
 
         svg.selectAll("path").remove();
+        svg.selectAll('text').remove();
 
         var path = svg.selectAll("path")
           .data(pie(pieData))
         .enter().append("path")
           .attr("fill", function(d, i) { return color(i); })
           .attr("d", arc);
+
+        var text = svg.append("text")
+          .attr("text-anchor", "middle")
+          .attr('dy', '.35em')
+          .style('font-size', '2rem')
+          .text(percent_text);
 
       }, true);
 
