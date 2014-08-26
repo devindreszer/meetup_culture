@@ -8,16 +8,20 @@
 <body>
   <a href="#/categories/">Categories</a>
   <a href="#/cities">Cities</a>
+  <a href='#/similar-city-links'>Similar Cities</a>
   <div x-ng-view></div>
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/d3.v3.js"></script>
   <script src="scripts/underscore-min.js"></script>
   <script src="app/app.js"></script>
   <script src="app/controllers/categoriesController.js"></script>
   <script src="app/services/categoriesFactory.js"></script>
   <script src="app/controllers/citiesController.js"></script>
   <script src="app/services/citiesFactory.js"></script>
+  <script src="app/controllers/similarCityLinksController.js"></script>
+  <script src="app/services/similarCityLinksFactory.js"></script>
   <script src="app/directives/barChart.js"></script>
+  <script src="app/directives/bundleChart.js"></script>
 </body>
 </html>

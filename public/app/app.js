@@ -22,6 +22,12 @@
           controller: 'CitiesController'
         }
       )
+      .when('/similar-city-links',
+        {
+          templateUrl: 'app/views/similarCityLinks.html',
+          controller: 'SimilarCityLinksController'
+        }
+      )
       .otherwise({ redirectTo: '/' });
   }]);
 
