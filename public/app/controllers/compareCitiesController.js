@@ -8,7 +8,7 @@
           cities = _.sortBy(cities, 'city');
           var categories = cities[0].group_counts.map(function(d){ return d.category; });
           $scope.cities = cities;
-          $scope.cityComparison = [cities[0]];
+          $scope.cityComparison = [];
           $scope.categories = _.sortBy(categories);
           $scope.currentCategory = $scope.categories[0];
 
