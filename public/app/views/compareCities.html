@@ -1,0 +1,34 @@
+<h1>Compare Cities</h1>
+<div>
+  <label>Select City 1
+    <select id="city-selection" x-ng-model="cityComparison[0]" x-ng-options="city.city for city in cities">
+    </select>
+  </label>
+</div>
+<div>
+  <label>Select City 2
+    <select id="city-selection" x-ng-model="cityComparison[1]" x-ng-options="city.city for city in cities">
+    </select>
+  </label>
+</div>
+<div>
+  <label>Select City 3
+    <select id="city-selection" x-ng-model="cityComparison[2]" x-ng-options="city.city for city in cities">
+    </select>
+  </label>
+</div>
+<div>
+  <h2>{{ cityComparison[0].city }}</h2>
+  <h3>Total Groups: {{ cityComparison[0].total_groups | number:0 }}</h3>
+</div>
+<div>
+  <h2>{{ cityComparison[1].city }}</h2>
+  <h3>Total Groups: {{ cityComparison[1].total_groups | number:0 }}</h3>
+</div>
+<div>
+  <h2>{{ cityComparison[2].city }}</h2>
+  <h3>Total Groups: {{ cityComparison[2].total_groups | number:0 }}</h3>
+</div>
+<div id="chart">
+  <group-bar-chart data="cityComparison"></group-bar-chart>
+</div>
