@@ -12,23 +12,32 @@
           data.forEach(function(link){
             sources.push(link.source);
           });
-          sources = _.uniq(sources);
-          sources = _.sortBy(sources);
+          sources = _.uniq(sources, function(source){return JSON.stringify(source);});
+          sources = _.sortBy(sources, "state");
+
+          var root = {
+            name: "root",
+            parent: { name: "", x: 180, y: 0 },
+            x: 120,
+            y: 0
+          };
 
           for(var i = 0; i < sources.length; i++) {
             similarCityNodes.push({
-              city: sources[i],
+              parent: root,
+              city: sources[i].city,
+              state: sources[i].state,
               x: (360 / sources.length) * i,
-              y: 360
+              y: 270
             });
           }
 
           data.forEach(function(link){
             sourceNode = similarCityNodes.filter(function(node){
-              return node.city === link.source;
+              return node.city === link.source.city;
             });
             targetNode = similarCityNodes.filter(function(node){
-              return node.city === link.target;
+              return node.city === link.target.city;
             });
 
             similarCityLinks.push({

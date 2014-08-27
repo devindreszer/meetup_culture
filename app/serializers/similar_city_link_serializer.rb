@@ -2,10 +2,16 @@ class SimilarCityLinkSerializer < ActiveModel::Serializer
   attributes :source, :target
 
   def source
-    object.source_city.city
+    {
+      city: object.source_city.city,
+      state: object.source_city.state
+    }
   end
 
   def target
-    object.target_city.city
+    {
+      city: object.target_city.city,
+      state: object.target_city.state
+    }
   end
 end
