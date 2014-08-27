@@ -9,23 +9,39 @@
 </head>
 <body>
 
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#">Meetup Culture</a></h1>
-      </li>
-    </ul>
-  </nav>
+  <div class="contain-to-grid">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Meetup Culture</a></h1>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <div class="row">
     <div class="small-12 small-centered columns">
-      <a href="#/categories/">Categories</a>
-      <a href="#/cities">Cities</a>
-      <a href='#/similar-city-links'>Similar Cities</a>
-      <a href='#/compare-cities'>Compare Cities</a>
+
+      <div class="icon-bar four-up" x-ng-controller="NavigationController">
+        <a href="#/categories/" class="item" x-ng-class="{ active: isActive('/')}">
+          <label>Categories</label>
+        </a>
+        <a href="#/cities" class="item" x-ng-class="{ active: isActive('/cities')}">
+          <label>Cities</label>
+        </a>
+        <a href='#/similar-city-links' class="item" x-ng-class="{ active: isActive('/similar-city-links')}">
+          <label>Similar Cities</label>
+        </a>
+        <a href='#/compare-cities' class="item" x-ng-class="{ active: isActive('/compare-cities')}">
+          <label>Compare Cities</label>
+        </a>
+      </div>
+
       <div x-ng-view></div>
+
     </div>
   </div>
+
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
   <script src="http://d3js.org/d3.v3.js"></script>
@@ -35,7 +51,7 @@
   <script src="app/services/categoriesFactory.js"></script>
   <script src="app/controllers/citiesController.js"></script>
   <script src="app/services/citiesFactory.js"></script>
-  <script src="app/controllers/similarCityLinksController.js"></script>
+  <script src="app/controllers/navigationController.js"></script>
   <script src="app/services/similarCityLinksFactory.js"></script>
   <script src="app/controllers/compareCitiesController.js"></script>
   <script src="app/directives/barChart.js"></script>
