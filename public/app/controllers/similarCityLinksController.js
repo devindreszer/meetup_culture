@@ -27,7 +27,7 @@
               parent: root,
               city: sources[i],
               x: (360 / sources.length) * i,
-              y: 360
+              y: 270
             });
           }
 
