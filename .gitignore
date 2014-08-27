@@ -15,3 +15,9 @@
 /log/*.log
 /tmp
 .env
+
+# Ignore foundation + compass specifics
+public/bower_components/*
+public/.sass-cache/*
+*.DS_Store
+public/styles/app.css
