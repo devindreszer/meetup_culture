@@ -44,11 +44,33 @@ line.median {
 }
 
 .node {
-  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #bbb;
+}
+
+.node:hover {
+  fill: #000;
 }
 
 .link {
-  stroke: #F20000;
-  stroke-opacity: .4;
+  stroke: #eee;
   fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+}
+
+.node--target {
+  fill: #F20000;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+  stroke: #F20000;
 }

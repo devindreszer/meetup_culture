@@ -27,19 +27,23 @@
       .append("g")
         .attr("transform", "translate(" + radius + "," + radius + ")");
 
+      var link = svg.append("g").selectAll(".link"),
+        node = svg.append("g").selectAll(".node");
+
       scope.$watch('data', function(data){
         if(!data){ return; }
 
         var links = data.links;
         var nodes = data.nodes;
 
-        svg.selectAll(".link")
+        link = link
           .data(bundle(links))
         .enter().append("path")
+          .each(function(d) { d.source = d[0], d.target = d[d.length - 1]; })
           .attr("class", "link")
           .attr("d", line);
 
-        svg.selectAll(".node")
+        node = node
           .data(nodes)
         .enter().append("g")
           .attr("class", "node")
@@ -49,9 +53,40 @@
           .attr("dy", ".31em")
           .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
           .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
-          .text(function(d) { return d.city + ", " + d.state; });
+          .text(function(d) { return d.city + ", " + d.state; })
+          .on("mouseover", mouseovered)
+          .on("mouseout", mouseouted);
 
       }, true);
+
+      function mouseovered(d) {
+
+        node
+            .each(function(n) { n.target = n.source = false; });
+
+        link
+            .classed("link--target", function(l) { if (l.target === d) return l.source.source = true; })
+            .classed("link--source", function(l) { if (l.source === d) return l.target.target = true; })
+          .filter(function(l) { return l.target === d || l.source === d; })
+            .each(function() { this.parentNode.appendChild(this); });
+
+        node
+            .classed("node--target", function(n) { return n.target; })
+            .classed("node--source", function(n) { return n.source; });
+      }
+
+      function mouseouted(d) {
+        var link = svg.append("g").selectAll(".link"),
+          node = svg.append("g").selectAll(".node");
+
+        link
+            .classed("link--target", false)
+            .classed("link--source", false);
+
+        node
+            .classed("node--target", false)
+            .classed("node--source", false);
+      }
 
     }
 
@@ -66,3 +101,4 @@
   angular.module('MeetupCulture').directive('bundleChart', bundleChart);
 
 })();
+
