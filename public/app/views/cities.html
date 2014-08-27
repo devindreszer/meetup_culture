@@ -1,6 +1,8 @@
-<div>
-  <select id="city-selection" x-ng-model="currentCity" x-ng-options="city.city for city in cities">
-  </select>
+<div class="small-12 medium-6 large-4">
+  <label>Select a City
+    <select id="city-selection" x-ng-model="currentCity" x-ng-options="city.city for city in cities">
+    </select>
+  </label>
 </div>
 <h2>{{ currentCity.city }}</h2>
 <h3>Total Groups: {{ currentCity.total_groups | number:0 }}</h3>
