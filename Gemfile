@@ -58,3 +58,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 # Whenever for writing and deploying cron jobs
 gem 'whenever', :require => false
 
+# Heroku Deployment
+
+group :production do
+  gem 'rails_12factor'
+end
