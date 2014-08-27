@@ -49,7 +49,7 @@
           .attr("dy", ".31em")
           .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
           .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
-          .text(function(d) { return d.city; });
+          .text(function(d) { return d.city + ", " + d.state; });
 
       }, true);
 
