@@ -1,14 +1,14 @@
 (function(){
 
-  var barChart = function(){
+  var barChart2 = function(){
 
     function link(scope, element, attr) {
 
-      var margin = {top: 30, right: 20, bottom: 30, left: 130},
+      var margin = {top: 30, right: 20, bottom: 30, left: 20},
         width = 960 - margin.left - margin.right,
         height = 200, // placeholder
-        barHeight = 16,
-        spacing = 2,
+        barHeight = 18,
+        spacing = 3,
         percent = d3.format('.1%'),
         x = d3.scale.linear().range([0, width]),
         y = d3.scale.ordinal();
@@ -19,14 +19,13 @@
       .append('g')
         .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
 
-      var bars = chart.selectAll('.bar');
-
       scope.$watch('data', function(data){
         if(!data){ return; }
         var type,
           xAxis,
-          yAxis,
-          median;
+          bars,
+          median,
+          colors;
 
         if(data.city) {
           type = "cities";
@@ -39,21 +38,12 @@
 
         x.domain([0, d3.max(data, function(d) { return d.group_percentage; })]);
 
-        if(type === "categories") {
-          y.domain(data.map(function(d) { return d.city; }))
-            .rangeRoundBands([0, data.length * barHeight]);
-        } else {
-          y.domain(data.map(function(d) { return d.category; }))
-            .rangeRoundBands([0, data.length * barHeight]);
-        }
+        y.domain(d3.range(data.length))
+          .rangeBands([0, data.length * barHeight]);
 
         xAxis = d3.svg.axis()
           .scale(x)
           .tickFormat(percent);
-
-        yAxis = d3.svg.axis()
-          .scale(y)
-          .tickSize(0);
 
         // set height based on data
         height = y.rangeExtent()[1];
@@ -72,46 +62,58 @@
           .attr('transform', 'translate(0,' + height + ')')
           .call(xAxis.orient('bottom'));
 
-        chart.append('g')
-          .attr('class', 'y axis')
-          .call(yAxis.orient('left'));
-
         // render the bars
-        bars = bars.data(data, function(d) { return d; });
+        chart.selectAll('.bar').remove();
 
-        if(type === "categories") {
-          bars.enter().append('rect')
-            .attr('class', 'bar')
-            .attr('height', y.rangeBand())
-            .attr('y', function(d) { return y(d.city); })
-            .transition()
-              .duration(1000)
-              .attr('width', function(d) { return x(d.group_percentage); });
-        } else {
-          bars.enter().append('rect')
-            .attr('class', 'bar')
-            .attr('height', y.rangeBand())
-            .attr('y', function(d) { return y(d.category); })
-            .transition()
-              .duration(1000)
-              .attr('width', function(d) { return x(d.group_percentage); });
-        }
+        bars = chart
+          .selectAll('.bar')
+            .data(data);
 
-        bars.exit().transition()
-          .remove();
+        // bars.exit().remove();
 
-      // add median line
-        median = d3.median(data.map(function(d){ return d.group_percentage; }));
-        chart.selectAll('.median').remove();
-
-        chart.append('line')
-          .attr('class', 'median')
+        bars.enter().append('g')
+          .attr('class', 'bar')
           .transition()
             .duration(1000)
-            .attr('x1', x(median))
-            .attr('x2', x(median))
-            .attr('y1', 1)
-            .attr('y2', height);
+            .attr('transform', function(d, i) { return 'translate(0,'  + y(i) + ')'; });
+
+        bars.append('rect')
+          .attr('class', 'background')
+          .attr('height', y.rangeBand())
+          .attr('width', width);
+
+        bars.append('rect')
+          .attr('class', 'percent')
+          .attr('height', y.rangeBand())
+          .attr('width', function(d) { return x(d.group_percentage); });
+
+        // category based table
+        if(type === "categories") {
+          bars.append('text')
+            .text(function(d) { return d.city + ", " + d.state; })
+            .attr('class', 'name')
+            .attr('y', y.rangeBand() - 5)
+            .attr('x', spacing);
+
+        // city based table
+        } else {
+          bars.append('text')
+            .text(function(d) { return d.category; })
+            .attr('class', 'name')
+            .attr('y', y.rangeBand() - 5)
+            .attr('x', spacing);
+        }
+
+      // add median ticks
+        median = d3.median(data.map(function(d){ return d.group_percentage; }));
+        d3.select('span.median').text(percent(median));
+
+        bars.append('line')
+          .attr('class', 'median')
+          .attr('x1', x(median))
+          .attr('x2', x(median))
+          .attr('y1', 1)
+          .attr('y2', y.rangeBand() - 1);
 
       }, true);
 
@@ -125,6 +127,6 @@
 
   };
 
-  angular.module('MeetupCulture').directive('barChart', barChart);
+  angular.module('MeetupCulture').directive('barChart2', barChart2);
 
 })();
