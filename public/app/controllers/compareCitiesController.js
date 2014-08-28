@@ -16,7 +16,7 @@
           $scope.cities = cities;
           $scope.cityComparison = cityComparison;
           $scope.categories = _.sortBy(categories);
-          $scope.currentCategory = $scope.categories[0];
+          $scope.currentCategory = $scope.categories[Math.floor(Math.random() * categories.length)];
 
           $scope.setCategory = function(category) {
             $scope.currentCategory = category;
