@@ -15,9 +15,8 @@
 
         scope.style = function () {
           return {
-            'background': red,
-            'height': (newValue.height) + 'px',
-            'width': (newValue.width) + 'px'
+            height: (newValue.height) + 'px',
+            width: (newValue.width) + 'px'
           };
         };
 

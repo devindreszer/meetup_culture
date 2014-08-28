@@ -1,9 +1,71 @@
 @import "settings";
 @import "foundation";
+@import url("http://fonts.googleapis.com/css?family=Covered+By+Your+Grace");
+
+#content {
+  border: 20px solid white;
+  position: absolute;
+  background: $primary-color;
+}
+
+#tag {
+  transform: rotate(-5deg);
+  margin-bottom: 1rem;
+
+  .tag-outside {
+    margin: 0 auto;
+    height: 150px;
+    width: 210px;
+    background: $primary-color;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+
+  .tag-inside {
+    margin: 0 auto;
+    height: 80px;
+    width: 200px;
+    background: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-40%);
+
+    .name {
+      font-family: 'Covered By Your Grace', cursive;
+      color: $jet;
+      font-size: rem-calc(60);
+    }
+  }
+}
+
+#tag:hover {
+  transform: rotate(0deg);
+}
 
 #banner {
-  padding: 2rem 0;
-  height: 80%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  h1, h4, p {
+    color: white;
+  }
+  h1 {
+    font-size: rem-calc(52);
+  }
+}
+
+#explore {
+  background: $primary-color;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: $white;
+}
+
+#explore:hover {
+  background: $white;
+  color: $primary-color;
 }
 
 .icon-bar {

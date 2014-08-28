@@ -1,15 +1,19 @@
 <div class="row">
-  <div class="medium-12 large-3 columns">
-    <label>Select a Category
-      <select id="category-selection" x-ng-model="currentCategory" x-ng-options="category.name for category in categories">
-      </select>
-    </label>
-  </div>
-  <div class="medium-12 large-9 columns text-center">
-    <h2>{{ currentCategory.name }}</h2>
-    <h4>Median Percentage: {{ currentCategory.median_percentage | percentage:1 }}</h4>
-    <div id="chart">
-      <bar-chart data="currentCategory"></bar-chart>
+  <div class="small-12 small-centered columns">
+    <div class="row">
+      <div class="medium-12 large-3 columns">
+        <label>Select a Category
+          <select id="category-selection" x-ng-model="currentCategory" x-ng-options="category.name for category in categories">
+          </select>
+        </label>
+      </div>
+      <div class="medium-12 large-9 columns text-center">
+        <h2>{{ currentCategory.name }}</h2>
+        <h4>Median Percentage: {{ currentCategory.median_percentage | percentage:1 }}</h4>
+        <div id="chart">
+          <bar-chart data="currentCategory"></bar-chart>
+        </div>
+      </div>
     </div>
   </div>
 </div>

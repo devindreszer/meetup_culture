@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
+@import url("http://fonts.googleapis.com/css?family=Covered+By+Your+Grace");
 /* line 343, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/{{ VERSION }}/";
@@ -8819,38 +8820,106 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 4, ../scss/app.scss */
-#banner {
-  padding: 2rem 0;
-  height: 80%;
+/* line 5, ../scss/app.scss */
+#content {
+  border: 20px solid white;
+  position: absolute;
+  background: #f20000;
 }
 
-/* line 10, ../scss/app.scss */
+/* line 11, ../scss/app.scss */
+#tag {
+  transform: rotate(-5deg);
+  margin-bottom: 1rem;
+}
+/* line 15, ../scss/app.scss */
+#tag .tag-outside {
+  margin: 0 auto;
+  height: 150px;
+  width: 210px;
+  background: #f20000;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+/* line 24, ../scss/app.scss */
+#tag .tag-inside {
+  margin: 0 auto;
+  height: 80px;
+  width: 200px;
+  background: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
+}
+/* line 33, ../scss/app.scss */
+#tag .tag-inside .name {
+  font-family: 'Covered By Your Grace', cursive;
+  color: #222222;
+  font-size: 3.75rem;
+}
+
+/* line 41, ../scss/app.scss */
+#tag:hover {
+  transform: rotate(0deg);
+}
+
+/* line 45, ../scss/app.scss */
+#banner {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 51, ../scss/app.scss */
+#banner h1, #banner h4, #banner p {
+  color: white;
+}
+/* line 54, ../scss/app.scss */
+#banner h1 {
+  font-size: 3.25rem;
+}
+
+/* line 59, ../scss/app.scss */
+#explore {
+  background: #f20000;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+/* line 66, ../scss/app.scss */
+#explore:hover {
+  background: white;
+  color: #f20000;
+}
+
+/* line 72, ../scss/app.scss */
 .icon-bar a {
   border-radius: 0.3rem;
 }
-/* line 13, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .icon-bar .active {
   background: #f20000;
 }
-/* line 15, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .icon-bar .active label {
   color: white;
 }
 
-/* line 22, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .button-group .active {
   background: #f20000;
   color: white;
 }
 
-/* line 29, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .side-nav .active {
   background: #f20000;
   color: white;
 }
 
-/* line 35, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 #category-buttons {
   margin-top: 2rem;
 }

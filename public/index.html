@@ -9,56 +9,37 @@
 </head>
 <body>
 
-  <nav class="top-bar" data-topbar x-ng-controller="NavigationController">
-    <section class="top-bar-section">
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li x-ng-class="{ active: isActive('/categories')}">
-          <a href="#/categories">
-            Category Breakdown
-          </a>
-        </li>
-        <li x-ng-class="{ active: isActive('/cities')}">
-          <a href="#/cities">
-            City Breakdown
-          </a>
-        </li>
-        <li x-ng-class="{ active: isActive('/similar-city-links')}">
-          <a href='#/similar-city-links'>
-            Similar City Links
-          </a>
-        </li>
-        <li x-ng-class="{ active: isActive('/compare-cities')}">
-          <a href='#/compare-cities'>
-            Compare Cities
-          </a>
-        </li>
-      </ul>
-    </section>
-  </nav>
-
-  <div class="row">
-    <div class="small-12 small-centered columns">
-
-<!--       <div class="icon-bar four-up" x-ng-controller="NavigationController">
-        <a href="#/categories" class="item" x-ng-class="{ active: isActive('/categories')}">
-          <label>Category Breakdown</label>
-        </a>
-        <a href="#/cities" class="item" x-ng-class="{ active: isActive('/cities')}">
-          <label>City Breakdown</label>
-        </a>
-        <a href='#/similar-city-links' class="item" x-ng-class="{ active: isActive('/similar-city-links')}">
-          <label>Similar City Links</label>
-        </a>
-        <a href='#/compare-cities' class="item" x-ng-class="{ active: isActive('/compare-cities')}">
-          <label>Compare Cities</label>
-        </a>
-      </div> -->
-
-      <div x-ng-view></div>
-
-    </div>
+  <div x-ng-controller="NavigationController" ng-hide="isActive('/')" class="ng-hide">
+    <nav class="top-bar" data-topbar>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li x-ng-class="{ active: isActive('/categories')}">
+            <a href="#/categories">
+              Category Breakdown
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/cities')}">
+            <a href="#/cities">
+              City Breakdown
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/similar-city-links')}">
+            <a href='#/similar-city-links'>
+              Similar City Links
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/compare-cities')}">
+            <a href='#/compare-cities'>
+              Compare Cities
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
   </div>
+
+  <div x-ng-view></div>
 
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
