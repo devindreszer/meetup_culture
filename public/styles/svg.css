@@ -1,16 +1,26 @@
 /* svg styles */
 svg {
-    font-family: sans-serif;
-    font-size: 10px;
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 .axis path,
 .axis line {
-    fill: none;
-    stroke: #444;
-    stroke-width: .5;
+  fill: none;
+  stroke: #444;
+  stroke-width: .5;
 }
 
+.bar {
+  stroke: #fff;
+  shape-rendering: crispEdges;
+  fill: #F20000;
+}
+
+.bar:hover {
+  fill: #BF0000;
+}
+/*
 .bar rect {
     stroke: #fff;
     shape-rendering: crispEdges;
@@ -32,15 +42,15 @@ svg {
     font-size: 0.75rem;
     fill: #fff;
 }
-
+*/
 .axis line {
-    stroke: #ccc;
-    stroke-width: 1;
+  stroke: #ccc;
+  stroke-width: 1;
 }
 
 line.median {
-    stroke: #777;
-    stroke-width: 1;
+  stroke: #777;
+  stroke-width: 1;
 }
 
 .node {
