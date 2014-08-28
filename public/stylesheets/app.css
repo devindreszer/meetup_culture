@@ -154,7 +154,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 75rem;
+  max-width: 90rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -5566,7 +5566,7 @@ dialog .columns {
   /* line 169, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5594,7 +5594,7 @@ dialog .columns {
   /* line 184, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5604,7 +5604,7 @@ dialog .columns {
   /* line 185, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5614,7 +5614,7 @@ dialog .columns {
   /* line 186, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5624,7 +5624,7 @@ dialog .columns {
   /* line 187, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5634,7 +5634,7 @@ dialog .columns {
   /* line 188, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5653,7 +5653,7 @@ dialog .columns {
   /* line 189, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 75rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7570,7 +7570,7 @@ meta.foundation-mq-topbar {
 
   /* line 455, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 75rem;
+    max-width: 90rem;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
@@ -8852,5 +8852,5 @@ th.hide-for-touch {
 
 /* line 35, ../scss/app.scss */
 #category-selection {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }

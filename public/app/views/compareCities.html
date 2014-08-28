@@ -1,29 +1,3 @@
-<div id="category-selection">
-  <ul class="button-group">
-    <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
-      <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
-    </li>
-  </ul>
-</div>
-
-<!-- <nav>
-  <ul class="side-nav">
-    <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
-      <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
-    </li>
-  </ul>
-</nav> -->
-
-<ul class="small-block-grid-1 medium-block-grid-3">
-  <li x-ng-repeat="city in cityComparison">
-    <div class="text-center">
-      <pie-chart data="{ category: currentCategory, city: city }"></pie-chart>
-      <h2>{{ city.city }}</h2>
-      <h3>{{ city.total_groups | number:0 }} Total Groups</h3>
-    </div>
-  </li>
-</ul>
-
 <ul class="small-block-grid-1 medium-block-grid-3">
   <li>
     <div>
@@ -51,3 +25,28 @@
   </li>
 </ul>
 
+<!-- <nav>
+  <ul class="side-nav">
+    <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
+      <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
+    </li>
+  </ul>
+</nav> -->
+
+<ul class="small-block-grid-1 medium-block-grid-3">
+  <li x-ng-repeat="city in cityComparison">
+    <div class="text-center">
+      <pie-chart data="{ category: currentCategory, city: city }"></pie-chart>
+      <h2>{{ city.city }}</h2>
+      <h3>{{ city.total_groups | number:0 }} Total Groups</h3>
+    </div>
+  </li>
+</ul>
+
+<div id="category-selection">
+  <ul class="button-group">
+    <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
+      <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
+    </li>
+  </ul>
+</div>
