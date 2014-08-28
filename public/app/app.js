@@ -6,8 +6,8 @@
     $routeProvider
       .when('/',
         {
-          templateUrl: 'app/views/categories.html',
-          controller: 'CategoriesController'
+          templateUrl: 'app/views/home.html',
+          controller: 'HomeController'
         }
       )
       .when('/categories',
