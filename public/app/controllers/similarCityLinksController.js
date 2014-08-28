@@ -28,7 +28,7 @@
               city: sources[i].city,
               state: sources[i].state,
               x: (360 / sources.length) * i,
-              y: 270
+              y: 200
             });
           }
 

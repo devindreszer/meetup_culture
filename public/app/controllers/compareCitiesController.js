@@ -15,6 +15,11 @@
           $scope.setCategory = function(category) {
             $scope.currentCategory = category;
           };
+
+          $scope.isActive = function(category) {
+            return category === $scope.currentCategory;
+          };
+
         })
         .error(function(data) {
           console.log(data);

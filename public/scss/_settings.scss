@@ -80,7 +80,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1200);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -434,11 +434,11 @@ $jet         : #222222;
 
 // We use this to control the display property.
 // $button-display: inline-block;
-// $button-margin-bottom: rem-calc(20);
+$button-margin-bottom: 0;
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: $white;
+$button-font-color: $jet;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -453,8 +453,8 @@ $jet         : #222222;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: $white;
+$button-bg-hover: $secondary-color;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
@@ -686,22 +686,16 @@ $jet         : #222222;
 
 // We use these to style the icon-bar and items
 // $include-html-icon-bar-classes: $include-html-classes;
-$icon-bar-bg: $secondary-color;
+$icon-bar-bg: $white;
 $icon-bar-font-color: $jet;
 // $icon-bar-font-size: 1rem;
-// $icon-bar-hover-color: $primary-color;
+$icon-bar-hover-color: $secondary-color;
 // $icon-bar-icon-color: $white;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
 // $icon-bar-image-height: 1.875rem;
 // $icon-bar-active-color: $primary-color;
 // $icon-bar-item-padding: 1.25rem;
-
-.icon-bar {
-  .active {
-    background: $primary-color;
-  }
-}
 
 // 13. Inline Lists
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1137,7 +1131,7 @@ $icon-bar-font-color: $jet;
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: rem-calc(0 0 7 0);
+$side-nav-list-margin: rem-calc(0 0 0 0);
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
@@ -1376,12 +1370,12 @@ $topbar-bg-color: $white;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 65px;
+$topbar-height: 45px;
 $topbar-margin-bottom: 1rem;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-$topbar-title-font-size: rem-calc(25);
+// $topbar-title-font-size: rem-calc(25);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
@@ -1394,7 +1388,7 @@ $topbar-title-font-size: rem-calc(25);
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $jet;
-// $topbar-link-color-hover: $white;
+$topbar-link-color-hover: $jet;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
@@ -1402,8 +1396,8 @@ $topbar-link-color: $jet;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-hover: #272727;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-hover: $secondary-color;
+$topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;

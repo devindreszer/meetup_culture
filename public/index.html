@@ -9,33 +9,51 @@
 </head>
 <body>
 
-  <div class="contain-to-grid">
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Meetup Culture</a></h1>
+  <nav class="top-bar" data-topbar x-ng-controller="NavigationController">
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li x-ng-class="{ active: isActive('/categories')}">
+          <a href="#/categories">
+            Category Breakdown
+          </a>
+        </li>
+        <li x-ng-class="{ active: isActive('/cities')}">
+          <a href="#/cities">
+            City Breakdown
+          </a>
+        </li>
+        <li x-ng-class="{ active: isActive('/similar-city-links')}">
+          <a href='#/similar-city-links'>
+            Similar City Links
+          </a>
+        </li>
+        <li x-ng-class="{ active: isActive('/compare-cities')}">
+          <a href='#/compare-cities'>
+            Compare Cities
+          </a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </section>
+  </nav>
 
   <div class="row">
     <div class="small-12 small-centered columns">
 
-      <div class="icon-bar four-up" x-ng-controller="NavigationController">
-        <a href="#/categories/" class="item" x-ng-class="{ active: isActive('/')}">
-          <label>Categories</label>
+<!--       <div class="icon-bar four-up" x-ng-controller="NavigationController">
+        <a href="#/categories" class="item" x-ng-class="{ active: isActive('/categories')}">
+          <label>Category Breakdown</label>
         </a>
         <a href="#/cities" class="item" x-ng-class="{ active: isActive('/cities')}">
-          <label>Cities</label>
+          <label>City Breakdown</label>
         </a>
         <a href='#/similar-city-links' class="item" x-ng-class="{ active: isActive('/similar-city-links')}">
-          <label>Similar Cities</label>
+          <label>Similar City Links</label>
         </a>
         <a href='#/compare-cities' class="item" x-ng-class="{ active: isActive('/compare-cities')}">
           <label>Compare Cities</label>
         </a>
-      </div>
+      </div> -->
 
       <div x-ng-view></div>
 
@@ -47,6 +65,7 @@
   <script src="http://d3js.org/d3.v3.js"></script>
   <script src="scripts/underscore-min.js"></script>
   <script src="app/app.js"></script>
+  <script src="app/controllers/homeController.js"></script>
   <script src="app/controllers/navigationController.js"></script>
   <script src="app/controllers/CategoriesController.js"></script>
   <script src="app/services/categoriesFactory.js"></script>
@@ -59,5 +78,6 @@
   <script src="app/directives/bundleChart.js"></script>
   <script src="app/directives/groupBarChart.js"></script>
   <script src="app/directives/pieChart.js"></script>
+  <script src="app/directives/resizable.js"></script>
 </body>
 </html>

@@ -1,6 +1,41 @@
 @import "settings";
 @import "foundation";
 
+#banner {
+  padding: 2rem 0;
+  height: 80%;
+}
+
+.icon-bar {
+  a {
+    border-radius: 0.3rem;
+  }
+  .active {
+    background: $primary-color;
+    label {
+      color: white;
+    }
+  }
+}
+
+.button-group {
+  .active {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.side-nav {
+  .active {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+#category-selection {
+  margin-bottom: 2rem;
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
