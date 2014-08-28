@@ -179,8 +179,8 @@ select {
 /* line 228, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin-left: -1.875rem;
+  margin-right: -1.875rem;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -213,8 +213,8 @@ select {
 /* line 233, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   width: 100%;
   float: left;
 }
@@ -402,8 +402,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left;
   }
 
@@ -743,8 +743,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left;
   }
 
@@ -1252,8 +1252,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left;
   }
 
@@ -1626,7 +1626,7 @@ select {
 /* line 145, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content, .accordion dd > .content {
   display: none;
-  padding: 0.9375rem;
+  padding: 1.875rem;
 }
 /* line 148, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
@@ -6902,7 +6902,7 @@ blockquote p {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.9375rem 0;
+  padding: 1.875rem 0;
   width: 100%;
 }
 /* line 89, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -6912,7 +6912,7 @@ blockquote p {
 }
 /* line 90, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content > .content.contained {
-  padding: 0.9375rem;
+  padding: 1.875rem;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical {
@@ -6920,7 +6920,7 @@ blockquote p {
 }
 /* line 94, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical > .content {
-  padding: 0 0.9375rem;
+  padding: 0 1.875rem;
 }
 
 @media only screen and (min-width: 40.063em) {
