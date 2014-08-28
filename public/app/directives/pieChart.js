@@ -4,8 +4,8 @@
 
     function link(scope, element, attr) {
 
-      var pieWidth = 300,
-        pieHeight = 300,
+      var pieWidth = 240,
+        pieHeight = 240,
         radius = Math.min(pieWidth, pieHeight) / 2;
 
       var svg = d3.select(element[0]).append("svg")
@@ -21,7 +21,7 @@
         .sort(null);
 
       var arc = d3.svg.arc()
-        .innerRadius(radius - 50)
+        .innerRadius(radius - 40)
         .outerRadius(radius);
 
       scope.$watch('data', function(data){

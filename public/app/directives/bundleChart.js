@@ -4,7 +4,7 @@
 
     function link(scope, element, attr) {
 
-      var diameter = 800,
+      var diameter = 600,
         radius = diameter / 2,
         innerRadius = radius - 120;
 
@@ -17,7 +17,7 @@
 
       var line = d3.svg.line.radial()
         .interpolate("bundle")
-        .tension(0.5)
+        .tension(0.6)
         .radius(function(d) { return d.y; })
         .angle(function(d) { return d.x / 180 * Math.PI; });
 

@@ -3,24 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Meetup Culture</title>
-  <link rel="stylesheet" href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css'>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="styles/svg.css">
 </head>
 <body>
-  <div class="row">
-    <div class="small-12 small-centered columns">
-      <a href="#/categories/">Categories</a>
-      <a href="#/cities">Cities</a>
-      <a href='#/similar-city-links'>Similar Cities</a>
-      <a href='#/compare-cities'>Compare Cities</a>
-      <div x-ng-view></div>
-    </div>
+
+  <div x-ng-controller="NavigationController" ng-hide="isActive('/')" class="ng-hide">
+    <nav class="top-bar" data-topbar>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li x-ng-class="{ active: isActive('/categories')}">
+            <a href="#/categories">
+              Category Breakdown
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/cities')}">
+            <a href="#/cities">
+              City Breakdown
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/similar-city-links')}">
+            <a href='#/similar-city-links'>
+              Similar City Links
+            </a>
+          </li>
+          <li x-ng-class="{ active: isActive('/compare-cities')}">
+            <a href='#/compare-cities'>
+              Compare Cities
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
   </div>
+
+  <div x-ng-view></div>
+
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
   <script src="http://d3js.org/d3.v3.js"></script>
   <script src="scripts/underscore-min.js"></script>
   <script src="app/app.js"></script>
+  <script src="app/controllers/homeController.js"></script>
+  <script src="app/controllers/navigationController.js"></script>
   <script src="app/controllers/CategoriesController.js"></script>
   <script src="app/services/categoriesFactory.js"></script>
   <script src="app/controllers/citiesController.js"></script>
@@ -32,5 +59,6 @@
   <script src="app/directives/bundleChart.js"></script>
   <script src="app/directives/groupBarChart.js"></script>
   <script src="app/directives/pieChart.js"></script>
+  <script src="app/directives/resizable.js"></script>
 </body>
 </html>

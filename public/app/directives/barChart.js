@@ -7,7 +7,7 @@
       var margin = {top: 30, right: 20, bottom: 30, left: 20},
         width = 960 - margin.left - margin.right,
         height = 200, // placeholder
-        barHeight = 20,
+        barHeight = 18,
         spacing = 3,
         percent = d3.format('.1%'),
         x = d3.scale.linear().range([0, width]),

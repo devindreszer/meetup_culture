@@ -7,14 +7,25 @@
         .success(function(cities) {
           cities = _.sortBy(cities, 'city');
           var categories = cities[0].group_counts.map(function(d){ return d.category; });
+          var cityComparison = [];
+
+          for(var i = 0; i < 3; i++) {
+            cityComparison[i] = cities[Math.floor(Math.random() * cities.length)];
+          }
+
           $scope.cities = cities;
-          $scope.cityComparison = [];
+          $scope.cityComparison = cityComparison;
           $scope.categories = _.sortBy(categories);
-          $scope.currentCategory = $scope.categories[0];
+          $scope.currentCategory = $scope.categories[Math.floor(Math.random() * categories.length)];
 
           $scope.setCategory = function(category) {
             $scope.currentCategory = category;
           };
+
+          $scope.isActive = function(category) {
+            return category === $scope.currentCategory;
+          };
+
         })
         .error(function(data) {
           console.log(data);

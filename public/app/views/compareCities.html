@@ -1,49 +1,56 @@
-<h1>Compare Cities</h1>
+<div class="row">
+  <div class="small-12 small-centered columns">
+    <ul class="small-block-grid-1 medium-block-grid-3">
+      <li>
+        <div>
+          <label>Select City 1
+            <select id="city-selection" x-ng-model="cityComparison[0]" x-ng-options="city.selection for city in cities">
+            </select>
+          </label>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>Select City 2
+            <select id="city-selection" x-ng-model="cityComparison[1]" x-ng-options="city.selection for city in cities">
+            </select>
+          </label>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>Select City 3
+            <select id="city-selection" x-ng-model="cityComparison[2]" x-ng-options="city.selection for city in cities">
+            </select>
+          </label>
+        </div>
+      </li>
+    </ul>
 
-<ul class="small-block-grid-1 large-block-grid-3">
-  <li>
-    <div>
-      <label>Select City 1
-        <select id="city-selection" x-ng-model="cityComparison[0]" x-ng-options="city.city for city in cities">
-        </select>
-      </label>
-    </div>
-  </li>
-  <li>
-    <div>
-      <label>Select City 2
-        <select id="city-selection" x-ng-model="cityComparison[1]" x-ng-options="city.city for city in cities">
-        </select>
-      </label>
-    </div>
-  </li>
-  <li>
-    <div>
-      <label>Select City 3
-        <select id="city-selection" x-ng-model="cityComparison[2]" x-ng-options="city.city for city in cities">
-        </select>
-      </label>
-    </div>
-  </li>
-</ul>
+    <!-- <nav>
+      <ul class="side-nav">
+        <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
+          <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
+        </li>
+      </ul>
+    </nav> -->
 
-<ul class="small-block-grid-1 large-block-grid-3">
-  <li x-ng-repeat="city in cityComparison">
-    <div class="text-center">
-      <pie-chart data="{ category: currentCategory, city: city }"></pie-chart>
-      <h2>{{ city.city }}</h2>
-      <h3>{{ city.total_groups | number:0 }} Total Groups</h3>
-    </div>
-  </li>
-</ul>
+    <ul class="small-block-grid-1 medium-block-grid-3">
+      <li x-ng-repeat="city in cityComparison">
+        <div class="text-center">
+          <pie-chart data="{ category: currentCategory, city: city }"></pie-chart>
+          <h2>{{ city.selection }}</h2>
+          <h4>{{ city.total_groups | number:0 }} Total Groups</h4>
+        </div>
+      </li>
+    </ul>
 
-<h2>{{ currentCategory }}</h2>
-<h3>Categories</h3>
-<p>Hover over a category to compare.</p>
-<div>
-  <ul class="inline-list">
-    <li x-ng-repeat="category in categories" x-ng-mouseenter="setCategory(category)">
-      {{ category }}
-    </li>
-  </ul>
+    <div id="category-buttons">
+      <ul class="button-group">
+        <li x-ng-repeat="category in categories" x-ng-click="setCategory(category)">
+          <a class="button tiny" x-ng-class="{ active: isActive(category)}">{{ category }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
