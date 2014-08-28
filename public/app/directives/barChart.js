@@ -34,8 +34,16 @@
           type = "categories";
         }
 
+        if(type === "categories") {
+          median = data.median_percentage;
+        }
+
         data = data.group_counts;
         data = _.sortBy(data, 'group_percentage').reverse();
+
+        if(type === "categories") {
+          data = _.first(data, 25);
+        }
 
         x.domain([0, d3.max(data, function(d) { return d.group_percentage; })]);
 
@@ -100,8 +108,11 @@
         bars.exit().transition()
           .remove();
 
-      // add median line
-        median = d3.median(data.map(function(d){ return d.group_percentage; }));
+        // add median line
+        if(type === "cities") {
+          median = d3.median(data.map(function(d){ return d.group_percentage; }));
+        }
+
         chart.selectAll('.median').remove();
 
         chart.append('line')
