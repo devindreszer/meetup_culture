@@ -93,6 +93,7 @@
             .attr('height', y.rangeBand())
             .attr('y', function(d) { return y(d.city); })
             .transition()
+              .delay(500)
               .duration(1000)
               .attr('width', function(d) { return x(d.group_percentage); });
         } else {
@@ -101,6 +102,7 @@
             .attr('height', y.rangeBand())
             .attr('y', function(d) { return y(d.category); })
             .transition()
+              .delay(500)
               .duration(1000)
               .attr('width', function(d) { return x(d.group_percentage); });
         }
@@ -118,6 +120,7 @@
         chart.append('line')
           .attr('class', 'median')
           .transition()
+            .delay(500)
             .duration(1000)
             .attr('x1', x(median))
             .attr('x2', x(median))

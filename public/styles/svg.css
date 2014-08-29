@@ -63,7 +63,8 @@ line.median {
 }
 
 .link {
-  stroke: #eee;
+  stroke: #bbb;
+  stroke-opacity: 0.3;
   fill: none;
   pointer-events: none;
 }

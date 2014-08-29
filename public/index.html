@@ -9,7 +9,12 @@
 </head>
 <body>
 
-  <div x-ng-controller="NavigationController" ng-hide="isActive('/')" class="ng-hide">
+  <div id="borderTop"></div>
+  <div id="borderLeft"></div>
+  <div id="borderBottom"></div>
+  <div id="borderRight"></div>
+
+  <div class="fixed" x-ng-controller="NavigationController" ng-hide="isActive('/')" class="ng-hide">
     <nav class="top-bar" data-topbar>
       <section class="top-bar-section">
         <!-- Left Nav Section -->
@@ -39,10 +44,11 @@
     </nav>
   </div>
 
-  <div x-ng-view></div>
+  <div class="page" x-ng-view></div>
 
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
+  <script src="scripts/angular-animate.min.js"></script>
   <script src="http://d3js.org/d3.v2.min.js" charset="utf-8"></script>
   <script src="scripts/underscore-min.js"></script>
   <script src="app/app.js"></script>

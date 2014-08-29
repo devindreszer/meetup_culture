@@ -2,10 +2,60 @@
 @import "foundation";
 @import url("http://fonts.googleapis.com/css?family=Covered+By+Your+Grace");
 
-#content {
-  border: 20px solid white;
+#borderTop, #borderRight, #borderBottom, #borderLeft {
+  position: fixed;
+  background: $white;
+  z-index: 3;
+}
+
+#borderTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+#borderRight {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+}
+
+#borderBottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+#borderLeft {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+}
+
+.top-bar {
+  margin-left: 20px;
+}
+
+#background, #app-background {
   position: absolute;
   background: $primary-color;
+}
+
+#app-background {
+  background: $secondary-color;
+  padding-top: 25px;
+}
+
+#content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #tag {
@@ -68,18 +118,6 @@
   color: $primary-color;
 }
 
-.icon-bar {
-  a {
-    border-radius: 0.3rem;
-  }
-  .active {
-    background: $primary-color;
-    label {
-      color: white;
-    }
-  }
-}
-
 .button-group {
   .active {
     background: $primary-color;
@@ -87,15 +125,61 @@
   }
 }
 
-.side-nav {
-  .active {
-    background: $primary-color;
-    color: white;
-  }
-}
+// .side-nav {
+//   .active {
+//     background: $primary-color;
+//     color: white;
+//   }
+// }
 
 #category-buttons {
   margin-top: 2rem;
+}
+
+// Animating page loads
+.page.ng-leave {
+  z-index:2;
+}
+
+.page.ng-enter {
+  z-index:1;
+}
+
+.page.ng-leave {
+  -webkit-animation:slideOutLeft 0.5s both ease-in;
+  -moz-animation:slideOutLeft 0.5s both ease-in;
+  animation: slideOutLeft 0.5s both ease-in;
+}
+
+.page.ng-enter {
+  -webkit-animation:slideInRight 0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+  animation:slideInRight 0.5s both ease-in;
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from  { transform:translateX(100%); }
+  to    { transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+  from  { -moz-transform:translateX(100%); }
+  to    { -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+  from  { -webkit-transform:translateX(100%); }
+  to    { -webkit-transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  to    { transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {
+  to    { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+  to    { -webkit-transform: translateX(-100%); }
 }
 
 // Or selectively include components

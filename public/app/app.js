@@ -1,6 +1,6 @@
 (function() {
 
-  var app = angular.module('MeetupCulture', ['ngRoute']);
+  var app = angular.module('MeetupCulture', ['ngRoute', 'ngAnimate']);
 
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider
