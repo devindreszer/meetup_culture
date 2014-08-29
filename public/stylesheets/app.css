@@ -8868,15 +8868,17 @@ th.hide-for-touch {
 #background, #app-background {
   position: absolute;
   background: #f20000;
+  min-height: 720px;
+  min-width: 1440px;
 }
 
-/* line 48, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 #app-background {
   background: #eeeeee;
   padding-top: 25px;
 }
 
-/* line 53, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 #content {
   position: relative;
   top: 50%;
@@ -8885,12 +8887,12 @@ th.hide-for-touch {
   transform: translateY(-50%);
 }
 
-/* line 61, ../scss/app.scss */
+/* line 63, ../scss/app.scss */
 #tag {
   transform: rotate(-5deg);
   margin-bottom: 1rem;
 }
-/* line 65, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 #tag .tag-outside {
   margin: 0 auto;
   height: 150px;
@@ -8899,7 +8901,7 @@ th.hide-for-touch {
   border: 2px solid white;
   border-radius: 20px;
 }
-/* line 74, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 #tag .tag-inside {
   margin: 0 auto;
   height: 80px;
@@ -8909,19 +8911,19 @@ th.hide-for-touch {
   top: 50%;
   transform: translateY(-40%);
 }
-/* line 83, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 #tag .tag-inside .name {
   font-family: 'Covered By Your Grace', cursive;
   color: #222222;
   font-size: 3.75rem;
 }
 
-/* line 91, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 #tag:hover {
   transform: rotate(0deg);
 }
 
-/* line 95, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 #banner {
   position: relative;
   top: 50%;
@@ -8929,16 +8931,16 @@ th.hide-for-touch {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 101, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 #banner h1, #banner h4, #banner p {
   color: white;
 }
-/* line 104, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 #banner h1 {
   font-size: 3.25rem;
 }
 
-/* line 109, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 #explore {
   background: #f20000;
   border: 2px solid white;
@@ -8946,41 +8948,41 @@ th.hide-for-touch {
   color: white;
 }
 
-/* line 116, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 #explore:hover {
   background: white;
   color: #f20000;
 }
 
-/* line 122, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .button-group .active {
   background: #f20000;
   color: white;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 137, ../scss/app.scss */
 #category-buttons {
   margin-top: 2rem;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .page.ng-leave {
   z-index: 2;
 }
 
-/* line 144, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .page.ng-enter {
   z-index: 1;
 }
 
-/* line 148, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
 .page.ng-leave {
   -webkit-animation: slideOutLeft 0.5s both ease-in;
   -moz-animation: slideOutLeft 0.5s both ease-in;
   animation: slideOutLeft 0.5s both ease-in;
 }
 
-/* line 154, ../scss/app.scss */
+/* line 156, ../scss/app.scss */
 .page.ng-enter {
   -webkit-animation: slideInRight 0.5s both ease-in;
   -moz-animation: slideInRight 0.5s both ease-in;
@@ -8989,53 +8991,53 @@ th.hide-for-touch {
 
 /* slide in from the right */
 @keyframes slideInRight {
-  /* line 162, ../scss/app.scss */
+  /* line 164, ../scss/app.scss */
   from {
     transform: translateX(100%);
   }
 
-  /* line 163, ../scss/app.scss */
+  /* line 165, ../scss/app.scss */
   to {
     transform: translateX(0);
   }
 }
 @-moz-keyframes slideInRight {
-  /* line 166, ../scss/app.scss */
+  /* line 168, ../scss/app.scss */
   from {
     -moz-transform: translateX(100%);
   }
 
-  /* line 167, ../scss/app.scss */
+  /* line 169, ../scss/app.scss */
   to {
     -moz-transform: translateX(0);
   }
 }
 @-webkit-keyframes slideInRight {
-  /* line 170, ../scss/app.scss */
+  /* line 172, ../scss/app.scss */
   from {
     -webkit-transform: translateX(100%);
   }
 
-  /* line 171, ../scss/app.scss */
+  /* line 173, ../scss/app.scss */
   to {
     -webkit-transform: translateX(0);
   }
 }
 /* slide in from the bottom */
 @keyframes slideOutLeft {
-  /* line 176, ../scss/app.scss */
+  /* line 178, ../scss/app.scss */
   to {
     transform: translateX(-100%);
   }
 }
 @-moz-keyframes slideOutLeft {
-  /* line 179, ../scss/app.scss */
+  /* line 181, ../scss/app.scss */
   to {
     -moz-transform: translateX(-100%);
   }
 }
 @-webkit-keyframes slideOutLeft {
-  /* line 182, ../scss/app.scss */
+  /* line 184, ../scss/app.scss */
   to {
     -webkit-transform: translateX(-100%);
   }

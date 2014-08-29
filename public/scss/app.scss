@@ -43,6 +43,8 @@
 #background, #app-background {
   position: absolute;
   background: $primary-color;
+  min-height: 720px;
+  min-width: 1440px;
 }
 
 #app-background {
