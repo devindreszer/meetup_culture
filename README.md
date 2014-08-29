@@ -21,6 +21,10 @@ Meetup Culture is built on the following:
 > * Automated Rake Tasks
 > * AngularJS
 > * D3.js
+> * SVG
+> * Foundation
+> * Compass
+> * Sass
 > * CSS3 animations
 
 ## Requirements
@@ -47,6 +51,18 @@ Set up Database:
 
 Compile SCSS
 * cd into public directory and run ```compass watch```
+
+## Next Steps
+* Test
+* Add loading gif
+* Improve compatibility on more screen sizes
+** Fix resizable directive
+** Make SVG elements scalable
+* Improve page animation (right and left)
+* Add kayboard shortcuts
+* Improve UX of category/city selections
+** Move selection to dropdown?
+** Add a selection screen?
 
 ## Contact
 Contact the developer on [GitHub](https://github.com/devindreszer/)
