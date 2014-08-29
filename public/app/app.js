@@ -43,4 +43,8 @@
     };
   }]);
 
+  app.run(function($rootScope, $location) {
+    $rootScope.location = $location;
+  });
+
 })();

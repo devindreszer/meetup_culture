@@ -44,7 +44,7 @@
     </nav>
   </div>
 
-  <div class="page" x-ng-view></div>
+  <div x-ng-class="{ page: location.path() !== '/' }" x-ng-view></div>
 
   <script src="scripts/angular.min.js"></script>
   <script src="scripts/angular-route.min.js"></script>
