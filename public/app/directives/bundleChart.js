@@ -27,6 +27,10 @@
       .append("g")
         .attr("transform", "translate(" + radius + "," + radius + ")");
 
+      svg.append("g").append("path")
+        .attr("class", "arc")
+        .attr("d", d3.svg.arc().outerRadius(200).innerRadius(0).startAngle(0).endAngle(2 * Math.PI));
+
       var link = svg.append("g").selectAll(".link"),
         node = svg.append("g").selectAll(".node");
 

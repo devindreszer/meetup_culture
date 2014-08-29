@@ -20,29 +20,7 @@ svg {
 .bar:hover {
   fill: #BF0000;
 }
-/*
-.bar rect {
-    stroke: #fff;
-    shape-rendering: crispEdges;
-}
 
-.bar rect.background {
-    fill: #eee;
-}
-
-.bar rect.percent {
-    fill: #F20000;
-}
-
-.bar:hover rect.percent {
-    fill: #BF0000;
-}
-
-.bar text {
-    font-size: 0.75rem;
-    fill: #fff;
-}
-*/
 .axis line {
   stroke: #ccc;
   stroke-width: 1;
@@ -83,4 +61,8 @@ line.median {
   stroke-opacity: 1;
   stroke-width: 2px;
   stroke: #F20000;
+}
+
+.arc {
+  fill: white;
 }

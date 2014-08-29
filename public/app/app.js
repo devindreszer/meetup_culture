@@ -1,6 +1,6 @@
 (function() {
 
-  var app = angular.module('MeetupCulture', ['ngRoute']);
+  var app = angular.module('MeetupCulture', ['ngRoute', 'ngAnimate']);
 
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider
@@ -42,5 +42,9 @@
       return $filter('number')(input * 100, decimals) + '%';
     };
   }]);
+
+  app.run(function($rootScope, $location) {
+    $rootScope.location = $location;
+  });
 
 })();

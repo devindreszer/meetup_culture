@@ -15,7 +15,7 @@
         .attr("transform", "translate(" + pieWidth / 2 + "," + pieHeight / 2 + ")");
 
       var color = d3.scale.ordinal()
-        .range(['#F20000', '#eee']);
+        .range(['#F20000', 'white']);
 
       var pie = d3.layout.pie()
         .sort(null);

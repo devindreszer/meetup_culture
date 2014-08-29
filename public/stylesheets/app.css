@@ -155,7 +155,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 90rem;
+  max-width: 125rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -2338,14 +2338,14 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: white;
-  border-color: #eeeeee;
+  background-color: #eeeeee;
+  border-color: white;
   color: #333333;
   transition: background-color 300ms ease-out;
 }
 /* line 157, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #eeeeee;
+  background-color: white;
 }
 /* line 163, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -2443,8 +2443,8 @@ button.round, .button.round {
 }
 /* line 235, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: white;
-  border-color: #eeeeee;
+  background-color: #eeeeee;
+  border-color: white;
   color: #333333;
   cursor: default;
   opacity: 0.7;
@@ -2452,7 +2452,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 /* line 157, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #eeeeee;
+  background-color: white;
 }
 /* line 163, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -2460,7 +2460,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 174, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: white;
+  background-color: #eeeeee;
 }
 /* line 236, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
@@ -5567,7 +5567,7 @@ dialog .columns {
   /* line 169, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5595,7 +5595,7 @@ dialog .columns {
   /* line 184, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5605,7 +5605,7 @@ dialog .columns {
   /* line 185, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5615,7 +5615,7 @@ dialog .columns {
   /* line 186, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5625,7 +5625,7 @@ dialog .columns {
   /* line 187, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5635,7 +5635,7 @@ dialog .columns {
   /* line 188, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5654,7 +5654,7 @@ dialog .columns {
   /* line 189, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 90rem;
+    max-width: 125rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7307,12 +7307,12 @@ meta.foundation-mq-topbar {
 /* line 315, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button.secondary {
   background-color: #eeeeee;
-  border-color: #bebebe;
+  border-color: white;
   color: #333333;
 }
 /* line 157, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-  background-color: #bebebe;
+  background-color: white;
 }
 /* line 163, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
@@ -7366,12 +7366,12 @@ meta.foundation-mq-topbar {
 /* line 326, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button.secondary {
   background-color: #eeeeee;
-  border-color: #bebebe;
+  border-color: white;
   color: #333333;
 }
 /* line 157, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-  background-color: #bebebe;
+  background-color: white;
 }
 /* line 163, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
@@ -7571,7 +7571,7 @@ meta.foundation-mq-topbar {
 
   /* line 455, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 90rem;
+    max-width: 125rem;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
@@ -8821,18 +8821,76 @@ th.hide-for-touch {
   }
 }
 /* line 5, ../scss/app.scss */
-#content {
-  border: 20px solid white;
+#borderTop, #borderRight, #borderBottom, #borderLeft {
+  position: fixed;
+  background: white;
+  z-index: 3;
+}
+
+/* line 11, ../scss/app.scss */
+#borderTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+/* line 18, ../scss/app.scss */
+#borderRight {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+}
+
+/* line 25, ../scss/app.scss */
+#borderBottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+/* line 32, ../scss/app.scss */
+#borderLeft {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+}
+
+/* line 39, ../scss/app.scss */
+.top-bar {
+  margin-left: 20px;
+}
+
+/* line 43, ../scss/app.scss */
+#background, #app-background {
   position: absolute;
   background: #f20000;
 }
 
-/* line 11, ../scss/app.scss */
+/* line 48, ../scss/app.scss */
+#app-background {
+  background: #eeeeee;
+  padding-top: 25px;
+}
+
+/* line 53, ../scss/app.scss */
+#content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 61, ../scss/app.scss */
 #tag {
   transform: rotate(-5deg);
   margin-bottom: 1rem;
 }
-/* line 15, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 #tag .tag-outside {
   margin: 0 auto;
   height: 150px;
@@ -8841,7 +8899,7 @@ th.hide-for-touch {
   border: 2px solid white;
   border-radius: 20px;
 }
-/* line 24, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 #tag .tag-inside {
   margin: 0 auto;
   height: 80px;
@@ -8851,19 +8909,19 @@ th.hide-for-touch {
   top: 50%;
   transform: translateY(-40%);
 }
-/* line 33, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 #tag .tag-inside .name {
   font-family: 'Covered By Your Grace', cursive;
   color: #222222;
   font-size: 3.75rem;
 }
 
-/* line 41, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 #tag:hover {
   transform: rotate(0deg);
 }
 
-/* line 45, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 #banner {
   position: relative;
   top: 50%;
@@ -8871,16 +8929,16 @@ th.hide-for-touch {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 51, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 #banner h1, #banner h4, #banner p {
   color: white;
 }
-/* line 54, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 #banner h1 {
   font-size: 3.25rem;
 }
 
-/* line 59, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 #explore {
   background: #f20000;
   border: 2px solid white;
@@ -8888,38 +8946,97 @@ th.hide-for-touch {
   color: white;
 }
 
-/* line 66, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 #explore:hover {
   background: white;
   color: #f20000;
 }
 
-/* line 72, ../scss/app.scss */
-.icon-bar a {
-  border-radius: 0.3rem;
-}
-/* line 75, ../scss/app.scss */
-.icon-bar .active {
-  background: #f20000;
-}
-/* line 77, ../scss/app.scss */
-.icon-bar .active label {
-  color: white;
-}
-
-/* line 84, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 .button-group .active {
   background: #f20000;
   color: white;
 }
 
-/* line 91, ../scss/app.scss */
-.side-nav .active {
-  background: #f20000;
-  color: white;
-}
-
-/* line 97, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 #category-buttons {
   margin-top: 2rem;
+}
+
+/* line 140, ../scss/app.scss */
+.page.ng-leave {
+  z-index: 2;
+}
+
+/* line 144, ../scss/app.scss */
+.page.ng-enter {
+  z-index: 1;
+}
+
+/* line 148, ../scss/app.scss */
+.page.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease-in;
+  -moz-animation: slideOutLeft 0.5s both ease-in;
+  animation: slideOutLeft 0.5s both ease-in;
+}
+
+/* line 154, ../scss/app.scss */
+.page.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease-in;
+  -moz-animation: slideInRight 0.5s both ease-in;
+  animation: slideInRight 0.5s both ease-in;
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  /* line 162, ../scss/app.scss */
+  from {
+    transform: translateX(100%);
+  }
+
+  /* line 163, ../scss/app.scss */
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  /* line 166, ../scss/app.scss */
+  from {
+    -moz-transform: translateX(100%);
+  }
+
+  /* line 167, ../scss/app.scss */
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  /* line 170, ../scss/app.scss */
+  from {
+    -webkit-transform: translateX(100%);
+  }
+
+  /* line 171, ../scss/app.scss */
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  /* line 176, ../scss/app.scss */
+  to {
+    transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slideOutLeft {
+  /* line 179, ../scss/app.scss */
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  /* line 182, ../scss/app.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+  }
 }
